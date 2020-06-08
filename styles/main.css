@@ -1,0 +1,77 @@
+body {
+  background-color: #ffffff;
+  font-family: 'Muli', sans-serif;
+  color: #041E44;
+}
+
+header {
+  background: url("../images/header/banner@2x.png") no-repeat center;
+  background-size: cover;
+}
+
+header .title-text {
+  margin-top: 186px;
+}
+
+header .title-text h1 {
+  font-family: 'Lato', sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+header .title-text h4 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+header .title-text p {
+  font-size: 24px;
+}
+
+header .btn-cv {
+  max-width: 203px;
+  background-color: #F2A816;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 10px 23px;
+}
+
+header .btn-cv:hover {
+  background-color: #F3B12F;
+  color: #ffffff;
+}
+
+header .btn-more {
+  max-width: 203px;
+  margin-left: 20px;
+  background-color: #052758;
+  color: #ffffff;
+  font-size: 22px;
+  border-radius: 10px;
+  padding: 10px 17px;
+}
+
+header .btn-more:hover {
+  background-color: #0A3C85;
+  color: #ffffff;
+}
+
+header .pic-avatar {
+  margin-top: 65px;
+  max-width: 370px;
+  max-height: 471px;
+}
+
+header .pic-avatar .socmed {
+  margin-left: 35px;
+}
+
+header .pic-avatar .socmed img {
+  margin-top: 25px;
+  margin-left: 20px;
+  max-width: 30px;
+  max-height: 30px;
+}
+/*# sourceMappingURL=main.css.map */
