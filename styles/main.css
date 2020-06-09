@@ -74,4 +74,50 @@ header .pic-avatar .socmed img {
   max-width: 30px;
   max-height: 30px;
 }
+
+.portfolio-header {
+  margin-top: 60px;
+}
+
+.portfolio-header h1 {
+  font-family: 'Lato', sans-serif;
+  font-size: 65px;
+  font-weight: bold;
+}
+
+.portfolio-header h4 {
+  font-size: 24px;
+  color: #D8930C;
+}
+
+.portfolio-header hr {
+  width: 411px;
+  color: #041E44;
+}
+
+.portfolio-content {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.portfolio-content .nav-link {
+  color: #041E44;
+}
+
+.portfolio-content .nav-link.active {
+  color: #D8930C;
+}
+
+.portfolio-content .porto-image {
+  margin-top: 40px;
+}
+
+.portfolio-content .porto-image img {
+  width: 100%;
+  max-height: 250px;
+}
+
+.portfolio-content .porto-image .row-two {
+  margin-top: 20px;
+}
 /*# sourceMappingURL=main.css.map */

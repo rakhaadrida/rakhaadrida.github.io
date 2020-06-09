@@ -75,3 +75,49 @@ header {
     }
   }
 }
+
+.portfolio-header {
+  margin-top: 60px;
+
+  h1 {
+    font-family: 'Lato', sans-serif;
+    font-size: 65px;
+    font-weight: bold;
+  }
+
+  h4 {
+    font-size: 24px;
+    color: #D8930C;
+  }
+
+  hr {
+    width: 411px;
+    color: #041E44;
+  }
+}
+
+.portfolio-content {
+  font-size: 28px;
+  font-weight: bold;
+
+  .nav-link {
+    color: #041E44;
+
+    &.active {
+      color: #D8930C;
+    }
+  }
+
+  .porto-image {
+    margin-top: 40px;
+
+    img {
+      width: 100%;
+      max-height: 250px;
+    }
+
+    .row-two {
+      margin-top: 20px;
+    }
+  }
+}
