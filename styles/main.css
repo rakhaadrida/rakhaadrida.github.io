@@ -7,6 +7,7 @@ body {
 header {
   background: url("../images/header/banner@2x.png") no-repeat center;
   background-size: cover;
+  height: 600px;
 }
 
 header .title-text {
@@ -81,7 +82,7 @@ header .pic-avatar .socmed img {
 
 .portfolio-header h1 {
   font-family: 'Lato', sans-serif;
-  font-size: 65px;
+  font-size: 50px;
   font-weight: bold;
 }
 
@@ -119,5 +120,217 @@ header .pic-avatar .socmed img {
 
 .portfolio-content .porto-image .row-two {
   margin-top: 20px;
+}
+
+.skill {
+  background-color: #F6F6F6;
+  margin-top: -350px;
+}
+
+.skill .skill-header {
+  margin-top: 440px;
+}
+
+.skill .skill-header h1 {
+  font-family: 'Lato', sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.skill .skill-header h4 {
+  font-size: 24px;
+  color: #D8930C;
+}
+
+.skill .skill-content {
+  margin-top: 60px;
+}
+
+.skill .skill-content .skill-name {
+  font-size: 22px;
+}
+
+.skill .skill-content .skill-value-one {
+  font-size: 22px;
+  margin-left: 340px;
+}
+
+.skill .skill-content .skill-value-two {
+  font-size: 22px;
+  margin-left: 322px;
+}
+
+.skill .skill-content .row-two {
+  margin-top: 30px;
+}
+
+.skill .skill-content .skill-value-three {
+  font-size: 22px;
+  margin-left: 282px;
+}
+
+.skill .skill-content .skill-value-four {
+  font-size: 22px;
+  margin-left: 120px;
+}
+
+.skill .skill-content .skill-value-five {
+  font-size: 22px;
+  margin-left: 270px;
+}
+
+.skill .skill-content .skill-value-six {
+  font-size: 22px;
+  margin-left: 245px;
+}
+
+.skill .skill-content .skill-value-seven {
+  font-size: 22px;
+  margin-left: 188px;
+}
+
+.skill .skill-content .progress {
+  background-color: #D1CBCB;
+}
+
+.skill .skill-content .skill-bar {
+  background-color: #F2A816;
+}
+
+.skill .skill-footer {
+  height: 100px;
+}
+
+.resume-header {
+  margin-top: 60px;
+}
+
+.resume-header h1 {
+  font-family: 'Lato', sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.resume-header h4 {
+  font-size: 24px;
+  color: #D8930C;
+}
+
+.resume-content {
+  margin-top: 50px;
+}
+
+.resume-content .resume-item h4 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.resume-content .resume-item .list-group {
+  margin-top: 20px;
+}
+
+.resume-content .resume-item .list-group-item {
+  background-color: #041E44;
+  border-left-color: #D8930C;
+  border-left-width: 4px;
+  border-bottom-color: #345380;
+  border-bottom-width: 2px;
+  padding-top: 30px;
+  padding-right: 55px;
+}
+
+.resume-content .resume-item .list-group-item img {
+  margin-top: -7px;
+  margin-left: -20px;
+  max-width: 28px;
+  max-height: 16px;
+}
+
+.resume-content .resume-item .list-group-item .item-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #F8F8F8;
+  margin-left: 20px;
+}
+
+.resume-content .resume-item .list-group-item .item-place-year {
+  margin-top: 5px;
+  margin-left: 33px;
+  font-size: 18px;
+  color: #8F9397;
+}
+
+.resume-content .resume-item .list-group-item .item-description {
+  margin-top: -3px;
+  margin-left: 33px;
+  font-size: 18px;
+  color: #8F9397;
+}
+
+.resume-content .resume-item .small-margin {
+  padding-top: 17px;
+}
+
+.resume-content .resume-item .large-margin {
+  padding-top: 43px;
+  padding-bottom: 40px;
+}
+
+.resume-content .resume-footer {
+  height: 100px;
+}
+
+.contact-header {
+  background-color: #041E44;
+}
+
+.contact-header h1 {
+  margin-top: 60px;
+  font-family: 'Lato', sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.contact-header h4 {
+  font-size: 24px;
+  color: #D8930C;
+}
+
+.contact-content {
+  background-color: #041E44;
+}
+
+.contact-content img {
+  margin-top: 70px;
+  width: 50px;
+  height: 50px;
+}
+
+.contact-content h4 {
+  margin-top: 20px;
+  font-size: 28px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.contact-content p {
+  margin-top: 10px;
+  font-size: 26px;
+  color: #8F9397;
+}
+
+.contact-footer {
+  background-color: #041E44;
+  height: 60px;
+}
+
+footer {
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+footer h4 {
+  font-size: 18px;
 }
 /*# sourceMappingURL=main.css.map */
