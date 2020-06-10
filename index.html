@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rakha Adrida</title>
   <link rel="stylesheet" href="libraries/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="libraries/font-awesome/css/font-awesome.css">
   <link
     href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&family=Muli:ital,wght@0,300;0,400;0,700;0,800;1,400&display=swap"
     rel="stylesheet"
@@ -78,6 +79,7 @@
       <div class="container">
         <div class="row">
           <div class="col">
+            <!--
             <ul class="nav justify-content-center">
               <li class="nav-item">
                 <a class="nav-link active" href="#">All</a>
@@ -92,67 +94,154 @@
                 <a class="nav-link" href="#">Mobile</a>
               </li>
             </ul> 
+            -->
+            <div align="center" id="porto">
+              <button class="btn filter-porto active" data-filter="all">All</button>
+              <button class="btn filter-porto" data-filter="web">Web</button>
+              <button class="btn filter-porto" data-filter="desktop">Desktop</button>
+              <button class="btn filter-porto" data-filter="mobile">Mobile</button>
+            </div>
           </div>
         </div>
       </div>
       <div class="container-fluid">
         <div class="porto-image justify-content-center">
-          <div class="row row-one">
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+          <div class="row">
+            <div class="porto-gallery col-12 col-sm-12 col-md-6 col-lg-4 filter web">
               <img 
                 src="images/porto/ankavel@2x.jpg" 
                 alt=""
                 class="img-fluid"
+                data-toggle="modal"
+                data-target="#ankavel"
               />
             </div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+            <div class="porto-gallery col-12 col-sm-12 col-md-6 col-lg-4 filter web">
               <img 
                 src="images/porto/dss_supplier@2x.jpg" 
                 alt=""
                 class="img-fluid"
               />
             </div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+            <div class="porto-gallery col-12 col-sm-12 col-md-6 col-lg-4 filter web">
               <img 
                 src="images/porto/ankastory@2x.jpg" 
                 alt="" 
                 class="img-fluid"
               />
             </div>
-          </div>
-          <div class="row row-two">
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+            <div class="porto-gallery col-12 col-sm-12 col-md-6 col-lg-4 filter web">
               <img 
                 src="images/porto/yadika@2x.jpg" 
                 alt="" 
                 class="img-fluid"
               />
             </div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+            <div class="porto-gallery col-12 col-sm-12 col-md-6 col-lg-4 filter desktop">
               <img 
                 src="images/porto/koperasi@2x.jpg" 
                 alt="" 
                 class="img-fluid"
               />
             </div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+            <div class="porto-gallery col-12 col-sm-12 col-md-6 col-lg-4 filter mobile">
               <img 
                 src="images/porto/blupark@2x.jpg" 
                 alt=""
                 class="img-fluid" 
               />
             </div>
-          </div>
-          <div class="row row-two">
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+            <div class="porto-gallery col-12 col-sm-12 col-md-6 col-lg-4 filter web">
               <img src="images/porto/ankavel-backend@2x.jpg" alt="" class="img-fluid" />
             </div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+            <div class="porto-gallery col-12 col-sm-12 col-md-6 col-lg-4 filter web">
               <img src="images/porto/tiket_bis@2x.jpg" alt="" class="img-fluid" />
             </div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+            <div class="porto-gallery col-12 col-sm-12 col-md-6 col-lg-4 filter desktop">
               <img src="images/porto/penjualan@2x.jpg" alt="" class="img-fluid" />
             </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="ankavel" tabindex="-1" role="dialog" aria-labelledby="vidChapterLabel"
+        aria-hidden="true">
+        <span class="close">&times;</span>
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-body mt-0 p-0">
+              <div class="porto-modal-title text-center">
+                <h3>TRAVEL SERVICES WEBSITE</h3>
+              </div>
+              <div class="porto-modal-detail">
+                <div class="row">
+                  <div class="col-12 col-sm-12 col-md-6 mb-1">
+                    <i class="fa fa-folder-o pr-2"></i>
+                    <span class="porto-label">Category :</span>
+                    <span class="porto-item">Website</span>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-6 mb-1">
+                    <i class="fa fa-gears pr-2"></i>
+                    <span class="porto-label">Tools :</span>
+                    <span class="porto-item">Visual Studio Code, Adobe XD</span>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-6 mb-1">
+                    <i class="fa fa-calendar pr-2"></i>
+                    <span class="porto-label">Year :</span>
+                    <span class="porto-item">April 2020</span>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-6 mb-1">
+                    <i class="fa fa-external-link pr-2"></i>
+                    <span class="porto-label">Preview :</span>
+                    <span class="porto-item">ankavel.github.io</span>
+                  </div> 
+                  <div class="col-12 col-sm-12 col-md-6 mb-1">
+                    <i class="fa fa-code pr-2"></i>
+                    <span class="porto-label">Languages :</span>
+                    <span class="porto-item">HTML, CSS - Bootstrap, Javascript, PHP - Laravel</span>
+                  </div>
+                </div>
+                <div id="carouselExampleIndicators" class="carousel slide portfolio-slider" data-ride="carousel" >
+                  <ol class="carousel-indicators">
+                    <li data-target="#slider" data-slide-to="0" class="active"></li>
+                    <li data-target="#slider" data-slide-to="1" class=""></li>
+                    <li data-target="#slider" data-slide-to="2" class=""></li>
+                    <li data-target="#slider" data-slide-to="3" class=""></li>
+                    <li data-target="#slider" data-slide-to="4" class=""></li>
+                    <li data-target="#slider" data-slide-to="5" class=""></li>
+                  </ol>
+                  <!-- The slideshow -->
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="images/ankavel/1@2x.jpg" alt="slide 1">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="images/ankavel/2@2x.jpg" alt="slide 2">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="images/ankavel/3@2x.jpg" alt="slide 3">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="images/ankavel/4@2x.jpg" alt="slide 4">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="images/ankavel/5@2x.jpg" alt="slide 5">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="images/ankavel/6@2x.jpg" alt="slide 6">
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -402,6 +491,34 @@
   <script src="libraries/jquery/jquery-3.5.0.min.js"></script>
   <script src="libraries/bootstrap/js/bootstrap.js"></script>
   <script src="libraries/retina/retina.min.js"></script>
+  <script>
+    $(document).ready(function () {
+
+      $(".filter-porto").click(function () {
+        var value = $(this).attr('data-filter');
+
+        if(value == "all") {
+          $('.filter').show('1000');
+        }
+        else {
+          $(".filter").not('.' + value).hide('3000');
+          $('.filter').filter('.' + value).show('3000');
+        }
+      });
+
+      var btnPorto = document.getElementById("porto");
+      var btns = btnPorto.getElementsByClassName("btn");
+
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+      
+    });
+  </script>
 
 </body>
 </html>

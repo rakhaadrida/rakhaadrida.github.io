@@ -109,6 +109,27 @@ header .pic-avatar .socmed img {
   color: #D8930C;
 }
 
+.portfolio-content .filter-porto {
+  font-size: 24px;
+  font-weight: bold;
+  color: #041E44;
+}
+
+.portfolio-content .filter-porto.active {
+  color: #D8930C;
+}
+
+.portfolio-content .filter-porto:hover {
+  color: #D8930C;
+}
+
+.portfolio-content .filter-porto.focus,
+.portfolio-content .filter-porto:focus {
+  outline: 0;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
 .portfolio-content .porto-image {
   margin-top: 40px;
 }
@@ -116,19 +137,27 @@ header .pic-avatar .socmed img {
 .portfolio-content .porto-image img {
   width: 100%;
   max-height: 250px;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
-.portfolio-content .porto-image .row-two {
-  margin-top: 20px;
+.portfolio-content .porto-image img:hover {
+  opacity: 0.7;
+}
+
+.portfolio-content .porto-image .porto-gallery {
+  margin-bottom: 20px;
 }
 
 .skill {
   background-color: #F6F6F6;
-  margin-top: -350px;
+  margin-top: -140px;
 }
 
 .skill .skill-header {
-  margin-top: 440px;
+  margin-top: 200px;
 }
 
 .skill .skill-header h1 {
@@ -316,7 +345,7 @@ header .pic-avatar .socmed img {
 
 .contact-content p {
   margin-top: 10px;
-  font-size: 26px;
+  font-size: 22px;
   color: #8F9397;
 }
 
@@ -332,5 +361,51 @@ footer {
 
 footer h4 {
   font-size: 18px;
+}
+
+.modal-content {
+  background-color: #041E44;
+  border-radius: 10px;
+}
+
+.porto-modal-title {
+  margin-top: 30px;
+}
+
+.porto-modal-title h3 {
+  font-family: 'Lato', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  color: #F2A816;
+}
+
+.porto-modal-detail {
+  padding: 30px;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.porto-modal-detail .porto-label {
+  font-weight: normal;
+}
+
+.porto-modal-detail .carousel {
+  margin-top: 30px;
+}
+
+.porto-modal-detail img {
+  width: 100%;
+}
+
+.porto-modal-detail li {
+  background-color: #F3B12F;
+}
+
+.porto-modal-detail .carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23F3B12F' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.porto-modal-detail .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23F3B12F' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
 /*# sourceMappingURL=main.css.map */

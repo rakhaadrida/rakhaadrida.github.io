@@ -109,26 +109,53 @@ header {
     }
   }
 
+  .filter-porto {
+    font-size: 24px;
+    font-weight: bold;
+    color: #041E44;
+
+    &.active {
+      color: #D8930C;
+    }
+
+    &:hover {
+      color: #D8930C;
+    }
+  }
+
+  .filter-porto.focus,
+  .filter-porto:focus {
+    outline: 0;
+    box-shadow: none !important;
+  }
+
   .porto-image {
     margin-top: 40px;
 
     img {
       width: 100%;
       max-height: 250px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        opacity: 0.7;
+      }
     }
 
-    .row-two {
-      margin-top: 20px;
+    .porto-gallery {
+      margin-bottom: 20px;
     }
   }
 }
 
 .skill {
   background-color: #F6F6F6;
-  margin-top: -350px;
+  margin-top: -140px;
 
   .skill-header {
-    margin-top: 440px;
+    margin-top: 200px;
 
     h1 {
       font-family: 'Lato', sans-serif;
@@ -318,7 +345,7 @@ header {
 
   p {
     margin-top: 10px;
-    font-size: 26px;
+    font-size: 22px;
     color: #8F9397;
   }
 }
@@ -334,5 +361,51 @@ footer {
   
   h4 {
     font-size: 18px;
+  }
+}
+
+.modal-content {
+  background-color: #041E44;
+  border-radius: 10px;
+}
+
+.porto-modal-title {
+  margin-top: 30px;
+
+  h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #F2A816;
+  }
+}
+
+.porto-modal-detail {
+  padding: 30px;
+  font-size: 18px;
+  color: #ffffff;
+
+  .porto-label {
+    font-weight: normal;
+  }
+
+  .carousel {
+    margin-top: 30px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  li {
+    background-color: #F3B12F;
+  }
+
+  .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23F3B12F' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+  }
+
+  .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23F3B12F' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
   }
 }
