@@ -7,7 +7,7 @@ body {
 header {
   background: url("../images/header/banner@2x.png") no-repeat center;
   background-size: cover;
-  height: 600px;
+  min-height: 600px;
 }
 
 header .title-text {
@@ -134,6 +134,18 @@ header .pic-avatar .socmed img {
   margin-top: 40px;
 }
 
+.portfolio-content .porto-image .porto-gallery {
+  margin-bottom: 20px;
+}
+
+.portfolio-content .porto-image .overlay {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+}
+
 .portfolio-content .porto-image img {
   width: 100%;
   max-height: 250px;
@@ -147,8 +159,41 @@ header .pic-avatar .socmed img {
   opacity: 0.7;
 }
 
-.portfolio-content .porto-image .porto-gallery {
-  margin-bottom: 20px;
+.portfolio-content .porto-image .over-text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  background: rgba(0, 0, 0, 0.9);
+  text-align: center;
+}
+
+.portfolio-content .porto-image .porto-gallery:hover .over-text {
+  opacity: 1;
+  display: inline-block;
+}
+
+.portfolio-content .porto-image .over-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: 80px;
+}
+
+.portfolio-content .porto-image .over-info {
+  font-size: 18px;
+  font-weight: bold;
+  color: #F2A816;
+}
+
+.portfolio-content .porto-image .over-divider {
+  border-width: 1px;
+  background-color: #041E44;
+  width: 130px;
 }
 
 .skill {
@@ -175,13 +220,17 @@ header .pic-avatar .socmed img {
   margin-top: 60px;
 }
 
+.skill .skill-content .skill-item {
+  margin-bottom: 30px;
+}
+
 .skill .skill-content .skill-name {
   font-size: 22px;
 }
 
 .skill .skill-content .skill-value-one {
   font-size: 22px;
-  margin-left: 340px;
+  margin-left: 330px;
 }
 
 .skill .skill-content .skill-value-two {
@@ -189,13 +238,9 @@ header .pic-avatar .socmed img {
   margin-left: 322px;
 }
 
-.skill .skill-content .row-two {
-  margin-top: 30px;
-}
-
 .skill .skill-content .skill-value-three {
   font-size: 22px;
-  margin-left: 282px;
+  margin-left: 198px;
 }
 
 .skill .skill-content .skill-value-four {
@@ -216,6 +261,11 @@ header .pic-avatar .socmed img {
 .skill .skill-content .skill-value-seven {
   font-size: 22px;
   margin-left: 188px;
+}
+
+.skill .skill-content .skill-value-eight {
+  font-size: 22px;
+  margin-left: 138px;
 }
 
 .skill .skill-content .progress {
@@ -407,5 +457,32 @@ footer h4 {
 
 .porto-modal-detail .carousel-control-next-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23F3B12F' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.porto-modal-detail .blupark-prev {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23041E44' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.porto-modal-detail .blupark-next {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23041E44' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+  outline: 0;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
 }
 /*# sourceMappingURL=main.css.map */
