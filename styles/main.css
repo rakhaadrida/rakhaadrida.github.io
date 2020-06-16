@@ -299,16 +299,20 @@ header .pic-avatar .socmed img {
   margin-top: 50px;
 }
 
-.resume-content .resume-item h4 {
+.resume-content .resume-item {
+  margin-bottom: 30px;
+}
+
+.resume-content h4 {
   font-size: 28px;
   font-weight: bold;
 }
 
-.resume-content .resume-item .list-group {
+.resume-content .list-group {
   margin-top: 20px;
 }
 
-.resume-content .resume-item .list-group-item {
+.resume-content .list-group-item {
   background-color: #041E44;
   border-left-color: #D8930C;
   border-left-width: 4px;
@@ -318,39 +322,39 @@ header .pic-avatar .socmed img {
   padding-right: 55px;
 }
 
-.resume-content .resume-item .list-group-item img {
+.resume-content .list-group-item img {
   margin-top: -7px;
   margin-left: -20px;
   max-width: 28px;
   max-height: 16px;
 }
 
-.resume-content .resume-item .list-group-item .item-title {
+.resume-content .list-group-item .item-title {
   font-size: 22px;
   font-weight: bold;
   color: #F8F8F8;
   margin-left: 20px;
 }
 
-.resume-content .resume-item .list-group-item .item-place-year {
+.resume-content .list-group-item .item-place-year {
   margin-top: 5px;
   margin-left: 33px;
   font-size: 18px;
   color: #8F9397;
 }
 
-.resume-content .resume-item .list-group-item .item-description {
+.resume-content .list-group-item .item-description {
   margin-top: -3px;
   margin-left: 33px;
   font-size: 18px;
   color: #8F9397;
 }
 
-.resume-content .resume-item .small-margin {
+.resume-content .small-margin {
   padding-top: 17px;
 }
 
-.resume-content .resume-item .large-margin {
+.resume-content .large-margin {
   padding-top: 43px;
   padding-bottom: 40px;
 }
@@ -397,6 +401,17 @@ header .pic-avatar .socmed img {
   margin-top: 10px;
   font-size: 22px;
   color: #8F9397;
+}
+
+.contact-content .socmed-footer {
+  margin-left: 10px;
+}
+
+.contact-content .socmed-footer img {
+  margin-top: 10px;
+  margin-right: 20px;
+  max-width: 25px;
+  max-height: 25px;
 }
 
 .contact-footer {

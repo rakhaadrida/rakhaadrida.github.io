@@ -299,61 +299,63 @@ header {
   margin-top: 50px;
 
   .resume-item {
-    h4 {
-      font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  h4 {
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .list-group {
+    margin-top: 20px;
+  }
+
+  .list-group-item {
+    background-color: #041E44;
+    border-left-color: #D8930C;
+    border-left-width: 4px;
+    border-bottom-color: #345380;
+    border-bottom-width: 2px;
+    padding-top: 30px;
+    padding-right: 55px;
+
+    img {
+      margin-top: -7px;
+      margin-left: -20px;
+      max-width: 28px;
+      max-height: 16px;
+    }
+
+    .item-title {
+      font-size: 22px;
       font-weight: bold;
+      color: #F8F8F8;
+      margin-left: 20px;
     }
 
-    .list-group {
-      margin-top: 20px;
+    .item-place-year {
+      margin-top: 5px;
+      margin-left: 33px;
+      font-size: 18px;
+      color: #8F9397;
     }
 
-    .list-group-item {
-      background-color: #041E44;
-      border-left-color: #D8930C;
-      border-left-width: 4px;
-      border-bottom-color: #345380;
-      border-bottom-width: 2px;
-      padding-top: 30px;
-      padding-right: 55px;
-
-      img {
-        margin-top: -7px;
-        margin-left: -20px;
-        max-width: 28px;
-        max-height: 16px;
-      }
-
-      .item-title {
-        font-size: 22px;
-        font-weight: bold;
-        color: #F8F8F8;
-        margin-left: 20px;
-      }
-
-      .item-place-year {
-        margin-top: 5px;
-        margin-left: 33px;
-        font-size: 18px;
-        color: #8F9397;
-      }
-
-      .item-description {
-        margin-top: -3px;
-        margin-left: 33px;
-        font-size: 18px;
-        color: #8F9397;
-      }
+    .item-description {
+      margin-top: -3px;
+      margin-left: 33px;
+      font-size: 18px;
+      color: #8F9397;
     }
+  }
 
-    .small-margin {
-      padding-top: 17px;
-    }
+  .small-margin {
+    padding-top: 17px;
+  }
 
-    .large-margin {
-      padding-top: 43px;
-      padding-bottom: 40px;
-    }
+  .large-margin {
+    padding-top: 43px;
+    padding-bottom: 40px;
   }
 
   .resume-footer {
@@ -398,6 +400,17 @@ header {
     margin-top: 10px;
     font-size: 22px;
     color: #8F9397;
+  }
+
+  .socmed-footer {
+    margin-left: 10px;
+
+    img {
+      margin-top: 10px;
+      margin-right: 20px;
+      max-width: 25px;
+      max-height: 25px;
+    }
   }
 }
 
