@@ -12,6 +12,7 @@ header {
 
 header .title-text {
   margin-top: 186px;
+  text-align: left;
 }
 
 header .title-text h1 {
@@ -37,6 +38,7 @@ header .btn-cv {
   font-weight: bold;
   border-radius: 10px;
   padding: 10px 23px;
+  float: left;
 }
 
 header .btn-cv:hover {
@@ -52,6 +54,7 @@ header .btn-more {
   font-size: 22px;
   border-radius: 10px;
   padding: 10px 17px;
+  float: left;
 }
 
 header .btn-more:hover {
@@ -71,7 +74,7 @@ header .pic-avatar .socmed {
 
 header .pic-avatar .socmed img {
   margin-top: 25px;
-  margin-left: 20px;
+  margin-right: 20px;
   max-width: 30px;
   max-height: 30px;
 }
@@ -499,5 +502,508 @@ footer h4 {
   outline: 0;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
+}
+
+@media only screen and (max-width: 1199px) {
+  header .pic-avatar .socmed {
+    margin-left: 10px;
+  }
+  header .pic-avatar .socmed img {
+    margin-top: 25px;
+    margin-right: 15px;
+    max-width: 30px;
+    max-height: 30px;
+  }
+  .skill .skill-content .skill-value-one {
+    font-size: 22px;
+    margin-left: 245px;
+  }
+  .skill .skill-content .skill-value-two {
+    font-size: 22px;
+    margin-left: 250px;
+  }
+  .skill .skill-content .skill-value-three {
+    font-size: 22px;
+    margin-left: 120px;
+  }
+  .skill .skill-content .skill-value-four {
+    font-size: 22px;
+    margin-left: 60px;
+  }
+  .skill .skill-content .skill-value-five {
+    font-size: 22px;
+    margin-left: 200px;
+  }
+  .skill .skill-content .skill-value-six {
+    font-size: 22px;
+    margin-left: 190px;
+  }
+  .skill .skill-content .skill-value-seven {
+    font-size: 22px;
+    margin-left: 135px;
+  }
+  .skill .skill-content .skill-value-eight {
+    font-size: 22px;
+    margin-left: 90px;
+  }
+  .skill .skill-content .skill-value-nine {
+    font-size: 22px;
+    margin-left: 175px;
+  }
+  .contact-content .socmed-footer {
+    margin-left: 0px;
+  }
+  .contact-content .socmed-footer img {
+    margin-top: 10px;
+    margin-right: 12px;
+    max-width: 25px;
+    max-height: 25px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  header {
+    min-height: 420px;
+  }
+  header .title-text {
+    margin-top: 100px;
+  }
+  header .title-text h1 {
+    font-size: 38px;
+  }
+  header .title-text h4 {
+    font-size: 22px;
+  }
+  header .title-text p {
+    font-size: 20px;
+  }
+  header .btn-cv {
+    font-size: 18px;
+    padding: 8px 15px;
+  }
+  header .btn-more {
+    font-size: 18px;
+    padding: 8px 15px;
+  }
+  header .pic-avatar .socmed {
+    margin-left: 15px;
+  }
+  header .pic-avatar .socmed img {
+    margin-top: 25px;
+    margin-right: 15px;
+    max-width: 20px;
+    max-height: 20px;
+  }
+  .skill .skill-content .skill-value-one {
+    font-size: 22px;
+    margin-left: 465px;
+  }
+  .skill .skill-content .skill-value-two {
+    font-size: 22px;
+    margin-left: 445px;
+  }
+  .skill .skill-content .skill-value-three {
+    font-size: 22px;
+    margin-left: 325px;
+  }
+  .skill .skill-content .skill-value-four {
+    font-size: 22px;
+    margin-left: 230px;
+  }
+  .skill .skill-content .skill-value-five {
+    font-size: 22px;
+    margin-left: 385px;
+  }
+  .skill .skill-content .skill-value-six {
+    font-size: 22px;
+    margin-left: 335px;
+  }
+  .skill .skill-content .skill-value-seven {
+    font-size: 22px;
+    margin-left: 280px;
+  }
+  .skill .skill-content .skill-value-eight {
+    font-size: 22px;
+    margin-left: 215px;
+  }
+  .skill .skill-content .skill-value-nine {
+    font-size: 22px;
+    margin-left: 355px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  header {
+    min-height: 300px;
+  }
+  header .title-text {
+    margin-top: 70px;
+  }
+  header .title-text h1 {
+    font-size: 28px;
+  }
+  header .title-text h4 {
+    font-size: 18px;
+  }
+  header .title-text p {
+    font-size: 16px;
+  }
+  header .btn-cv {
+    max-width: 173px;
+    margin-top: 10px !important;
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+  header .btn-more {
+    max-width: 173px;
+    margin-left: 5px;
+    margin-top: 10px !important;
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+  header .pic-avatar {
+    margin-top: 40px;
+    max-width: 270px;
+    max-height: 371px;
+  }
+  header .pic-avatar .socmed {
+    margin-left: 7px;
+  }
+  header .pic-avatar .socmed img {
+    margin-top: 20px;
+    margin-right: 8px;
+    max-width: 17px;
+    max-height: 17px;
+  }
+  .skill .skill-content .skill-value-one {
+    font-size: 22px;
+    margin-left: 305px;
+  }
+  .skill .skill-content .skill-value-two {
+    font-size: 22px;
+    margin-left: 300px;
+  }
+  .skill .skill-content .skill-value-three {
+    font-size: 22px;
+    margin-left: 170px;
+  }
+  .skill .skill-content .skill-value-four {
+    font-size: 22px;
+    margin-left: 100px;
+  }
+  .skill .skill-content .skill-value-five {
+    font-size: 22px;
+    margin-left: 245px;
+  }
+  .skill .skill-content .skill-value-six {
+    font-size: 22px;
+    margin-left: 225px;
+  }
+  .skill .skill-content .skill-value-seven {
+    font-size: 22px;
+    margin-left: 170px;
+  }
+  .skill .skill-content .skill-value-eight {
+    font-size: 22px;
+    margin-left: 120px;
+  }
+  .skill .skill-content .skill-value-nine {
+    font-size: 22px;
+    margin-left: 215px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  header {
+    min-height: 490px;
+  }
+  header .title-text {
+    text-align: center;
+    margin-top: 45px;
+  }
+  header .title-text h1 {
+    font-size: 36px;
+  }
+  header .title-text h4 {
+    margin-top: -5px;
+    font-size: 22px;
+  }
+  header .title-text p {
+    margin-top: -5px;
+    font-size: 20px;
+  }
+  header .btn-cv {
+    max-width: 203px;
+    margin-left: -230px;
+    margin-top: 10px !important;
+    font-size: 18px;
+    padding: 8px 19px;
+    float: none;
+  }
+  header .btn-more {
+    max-width: 203px;
+    margin-left: -162px;
+    margin-top: 130px !important;
+    font-size: 18px;
+    padding: 8px 15px;
+    float: none;
+  }
+  header .pic-avatar {
+    margin-left: 200px;
+    margin-top: -170px;
+    max-width: 200px;
+    max-height: 301px;
+  }
+  header .pic-avatar .socmed {
+    margin-left: 7px;
+  }
+  header .pic-avatar .socmed img {
+    margin-top: 15px;
+    margin-right: 8px;
+    max-width: 20px;
+    max-height: 20px;
+  }
+  .skill .skill-content .skill-value-one {
+    font-size: 22px;
+    margin-left: 335px;
+  }
+  .skill .skill-content .skill-value-two {
+    font-size: 22px;
+    margin-left: 325px;
+  }
+  .skill .skill-content .skill-value-three {
+    font-size: 22px;
+    margin-left: 200px;
+  }
+  .skill .skill-content .skill-value-four {
+    font-size: 22px;
+    margin-left: 125px;
+  }
+  .skill .skill-content .skill-value-five {
+    font-size: 22px;
+    margin-left: 275px;
+  }
+  .skill .skill-content .skill-value-six {
+    font-size: 22px;
+    margin-left: 245px;
+  }
+  .skill .skill-content .skill-value-seven {
+    font-size: 22px;
+    margin-left: 190px;
+  }
+  .skill .skill-content .skill-value-eight {
+    font-size: 22px;
+    margin-left: 140px;
+  }
+  .skill .skill-content .skill-value-nine {
+    font-size: 22px;
+    margin-left: 245px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .skill .skill-content .skill-value-one {
+    font-size: 22px;
+    margin-left: 300px;
+  }
+  .skill .skill-content .skill-value-two {
+    font-size: 22px;
+    margin-left: 300px;
+  }
+  .skill .skill-content .skill-value-three {
+    font-size: 22px;
+    margin-left: 170px;
+  }
+  .skill .skill-content .skill-value-four {
+    font-size: 22px;
+    margin-left: 100px;
+  }
+  .skill .skill-content .skill-value-five {
+    font-size: 22px;
+    margin-left: 245px;
+  }
+  .skill .skill-content .skill-value-six {
+    font-size: 22px;
+    margin-left: 225px;
+  }
+  .skill .skill-content .skill-value-seven {
+    font-size: 22px;
+    margin-left: 170px;
+  }
+  .skill .skill-content .skill-value-eight {
+    font-size: 22px;
+    margin-left: 120px;
+  }
+  .skill .skill-content .skill-value-nine {
+    font-size: 22px;
+    margin-left: 215px;
+  }
+}
+
+@media only screen and (max-width: 505px) {
+  .skill .skill-content .skill-value-one {
+    font-size: 22px;
+    margin-left: 270px;
+  }
+  .skill .skill-content .skill-value-two {
+    font-size: 22px;
+    margin-left: 270px;
+  }
+  .skill .skill-content .skill-value-three {
+    font-size: 22px;
+    margin-left: 140px;
+  }
+  .skill .skill-content .skill-value-four {
+    font-size: 22px;
+    margin-left: 70px;
+  }
+  .skill .skill-content .skill-value-five {
+    font-size: 22px;
+    margin-left: 215px;
+  }
+  .skill .skill-content .skill-value-six {
+    font-size: 22px;
+    margin-left: 205px;
+  }
+  .skill .skill-content .skill-value-seven {
+    font-size: 22px;
+    margin-left: 150px;
+  }
+  .skill .skill-content .skill-value-eight {
+    font-size: 22px;
+    margin-left: 100px;
+  }
+  .skill .skill-content .skill-value-nine {
+    font-size: 22px;
+    margin-left: 185px;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .skill .skill-content .skill-value-one {
+    font-size: 22px;
+    margin-left: 240px;
+  }
+  .skill .skill-content .skill-value-two {
+    font-size: 22px;
+    margin-left: 240px;
+  }
+  .skill .skill-content .skill-value-three {
+    font-size: 22px;
+    margin-left: 110px;
+  }
+  .skill .skill-content .skill-value-four {
+    font-size: 22px;
+    margin-left: 50px;
+  }
+  .skill .skill-content .skill-value-five {
+    font-size: 22px;
+    margin-left: 195px;
+  }
+  .skill .skill-content .skill-value-six {
+    font-size: 22px;
+    margin-left: 185px;
+  }
+  .skill .skill-content .skill-value-seven {
+    font-size: 22px;
+    margin-left: 130px;
+  }
+  .skill .skill-content .skill-value-eight {
+    font-size: 22px;
+    margin-left: 85px;
+  }
+  .skill .skill-content .skill-value-nine {
+    font-size: 22px;
+    margin-left: 165px;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  header {
+    min-height: 425px;
+  }
+  header .title-text {
+    text-align: center;
+    margin-top: 45px;
+  }
+  header .title-text h1 {
+    font-size: 30px;
+  }
+  header .title-text h4 {
+    margin-top: -5px;
+    font-size: 20px;
+  }
+  header .title-text p {
+    margin-top: -5px;
+    font-size: 18px;
+  }
+  header .btn-cv {
+    max-width: 203px;
+    margin-left: -190px;
+    margin-top: 10px !important;
+    font-size: 16px;
+    padding: 7px 15px;
+  }
+  header .btn-more {
+    max-width: 203px;
+    margin-left: -140px;
+    margin-top: 120px !important;
+    font-size: 16px;
+    padding: 7px 11px;
+  }
+  header .pic-avatar {
+    margin-left: 200px;
+    margin-top: -150px;
+    max-width: 160px;
+    max-height: 261px;
+  }
+  header .pic-avatar .socmed {
+    margin-left: 7px;
+  }
+  header .pic-avatar .socmed img {
+    margin-top: 15px;
+    margin-right: 8px;
+    max-width: 18px;
+    max-height: 18px;
+  }
+}
+
+@media only screen and (max-width: 445px) {
+  .skill .skill-content .skill-value-one {
+    font-size: 22px;
+    margin-left: 210px;
+  }
+  .skill .skill-content .skill-value-two {
+    font-size: 22px;
+    margin-left: 215px;
+  }
+  .skill .skill-content .skill-value-three {
+    font-size: 22px;
+    margin-left: 90px;
+  }
+  .skill .skill-content .skill-value-four {
+    font-size: 22px;
+    margin-left: 35px;
+  }
+  .skill .skill-content .skill-value-five {
+    font-size: 22px;
+    margin-left: 175px;
+  }
+  .skill .skill-content .skill-value-six {
+    font-size: 22px;
+    margin-left: 165px;
+  }
+  .skill .skill-content .skill-value-seven {
+    font-size: 22px;
+    margin-left: 110px;
+  }
+  .skill .skill-content .skill-value-eight {
+    font-size: 22px;
+    margin-left: 70px;
+  }
+  .skill .skill-content .skill-value-nine {
+    font-size: 22px;
+    margin-left: 145px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
