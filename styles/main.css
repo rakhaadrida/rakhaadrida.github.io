@@ -99,11 +99,6 @@ header .pic-avatar .socmed img {
   color: #041E44;
 }
 
-.portfolio-content {
-  font-size: 28px;
-  font-weight: bold;
-}
-
 .portfolio-content .nav-link {
   color: #041E44;
 }
@@ -233,42 +228,56 @@ header .pic-avatar .socmed img {
 
 .skill .skill-content .skill-value-one {
   font-size: 22px;
-  margin-left: 330px;
+  float: right;
+  margin-right: 35px;
 }
 
 .skill .skill-content .skill-value-two {
   font-size: 22px;
-  margin-left: 322px;
+  float: right;
+  margin-right: 85px;
 }
 
 .skill .skill-content .skill-value-three {
   font-size: 22px;
-  margin-left: 198px;
+  float: right;
+  margin-right: 60px;
 }
 
 .skill .skill-content .skill-value-four {
   font-size: 22px;
-  margin-left: 120px;
+  float: right;
+  margin-right: 140px;
 }
 
 .skill .skill-content .skill-value-five {
   font-size: 22px;
-  margin-left: 270px;
+  float: right;
+  margin-right: 115px;
 }
 
 .skill .skill-content .skill-value-six {
   font-size: 22px;
-  margin-left: 245px;
+  float: right;
+  margin-right: 195px;
 }
 
 .skill .skill-content .skill-value-seven {
   font-size: 22px;
-  margin-left: 188px;
+  float: right;
+  margin-right: 195px;
 }
 
 .skill .skill-content .skill-value-eight {
   font-size: 22px;
-  margin-left: 138px;
+  float: right;
+  margin-right: 245px;
+}
+
+.skill .skill-content .skill-value-nine {
+  font-size: 22px;
+  float: right;
+  margin-right: 115px;
 }
 
 .skill .skill-content .progress {
@@ -387,30 +396,34 @@ header .pic-avatar .socmed img {
   background-color: #041E44;
 }
 
-.contact-content img {
+.contact-content .contact-item {
+  margin-bottom: -30px;
+}
+
+.contact-content .contact-item img {
   margin-top: 70px;
   width: 50px;
   height: 50px;
 }
 
-.contact-content h4 {
+.contact-content .contact-item h4 {
   margin-top: 20px;
   font-size: 28px;
   color: #ffffff;
   font-weight: bold;
 }
 
-.contact-content p {
+.contact-content .contact-item p {
   margin-top: 10px;
   font-size: 22px;
   color: #8F9397;
 }
 
-.contact-content .socmed-footer {
+.contact-content .contact-item .socmed-footer {
   margin-left: 10px;
 }
 
-.contact-content .socmed-footer img {
+.contact-content .contact-item .socmed-footer img {
   margin-top: 10px;
   margin-right: 20px;
   max-width: 25px;
@@ -514,46 +527,10 @@ footer h4 {
     max-width: 30px;
     max-height: 30px;
   }
-  .skill .skill-content .skill-value-one {
-    font-size: 22px;
-    margin-left: 245px;
-  }
-  .skill .skill-content .skill-value-two {
-    font-size: 22px;
-    margin-left: 250px;
-  }
-  .skill .skill-content .skill-value-three {
-    font-size: 22px;
-    margin-left: 120px;
-  }
-  .skill .skill-content .skill-value-four {
-    font-size: 22px;
-    margin-left: 60px;
-  }
-  .skill .skill-content .skill-value-five {
-    font-size: 22px;
-    margin-left: 200px;
-  }
-  .skill .skill-content .skill-value-six {
-    font-size: 22px;
-    margin-left: 190px;
-  }
-  .skill .skill-content .skill-value-seven {
-    font-size: 22px;
-    margin-left: 135px;
-  }
-  .skill .skill-content .skill-value-eight {
-    font-size: 22px;
-    margin-left: 90px;
-  }
-  .skill .skill-content .skill-value-nine {
-    font-size: 22px;
-    margin-left: 175px;
-  }
-  .contact-content .socmed-footer {
+  .contact-content .contact-item .socmed-footer {
     margin-left: 0px;
   }
-  .contact-content .socmed-footer img {
+  .contact-content .contact-item .socmed-footer img {
     margin-top: 10px;
     margin-right: 12px;
     max-width: 25px;
@@ -594,41 +571,71 @@ footer h4 {
     max-width: 20px;
     max-height: 20px;
   }
-  .skill .skill-content .skill-value-one {
+  .portfolio-header h1 {
+    font-size: 38px;
+  }
+  .portfolio-header h4 {
+    font-size: 20px;
+  }
+  .portfolio-header hr {
+    width: 331px;
+  }
+  .portfolio-content .filter-porto {
     font-size: 22px;
-    margin-left: 465px;
+  }
+  .skill .skill-header h1 {
+    font-size: 38px;
+  }
+  .skill .skill-header h4 {
+    font-size: 20px;
   }
   .skill .skill-content .skill-value-two {
-    font-size: 22px;
-    margin-left: 445px;
+    margin-right: 110px;
   }
   .skill .skill-content .skill-value-three {
-    font-size: 22px;
-    margin-left: 325px;
+    margin-right: 80px;
   }
   .skill .skill-content .skill-value-four {
-    font-size: 22px;
-    margin-left: 230px;
+    margin-right: 180px;
   }
   .skill .skill-content .skill-value-five {
-    font-size: 22px;
-    margin-left: 385px;
+    margin-right: 150px;
   }
   .skill .skill-content .skill-value-six {
-    font-size: 22px;
-    margin-left: 335px;
+    margin-right: 250px;
   }
   .skill .skill-content .skill-value-seven {
-    font-size: 22px;
-    margin-left: 280px;
+    margin-right: 250px;
   }
   .skill .skill-content .skill-value-eight {
-    font-size: 22px;
-    margin-left: 215px;
+    margin-right: 320px;
   }
   .skill .skill-content .skill-value-nine {
-    font-size: 22px;
-    margin-left: 355px;
+    margin-right: 150px;
+  }
+  .resume-header h1 {
+    font-size: 38px;
+  }
+  .resume-header h4 {
+    font-size: 20px;
+  }
+  .resume-content h4 {
+    font-size: 24px;
+  }
+  .resume-content .list-group-item .item-title {
+    font-size: 20px;
+  }
+  .contact-header h1 {
+    font-size: 38px;
+  }
+  .contact-header h4 {
+    font-size: 20px;
+  }
+  .contact-content .contact-item h4 {
+    font-size: 24px;
+  }
+  .contact-content .contact-item p {
+    font-size: 20px;
   }
 }
 
@@ -675,41 +682,98 @@ footer h4 {
     max-width: 17px;
     max-height: 17px;
   }
+  .portfolio-header h1 {
+    font-size: 28px;
+  }
+  .portfolio-header h4 {
+    font-size: 18px;
+  }
+  .portfolio-header hr {
+    width: 301px;
+  }
+  .portfolio-content .filter-porto {
+    font-size: 18px;
+  }
+  .skill .skill-header h1 {
+    font-size: 28px;
+  }
+  .skill .skill-header h4 {
+    font-size: 18px;
+  }
+  .skill .skill-content .skill-name {
+    font-size: 20px;
+  }
   .skill .skill-content .skill-value-one {
-    font-size: 22px;
-    margin-left: 305px;
+    font-size: 20px;
+    margin-right: 35px;
   }
   .skill .skill-content .skill-value-two {
-    font-size: 22px;
-    margin-left: 300px;
+    font-size: 20px;
+    margin-right: 85px;
   }
   .skill .skill-content .skill-value-three {
-    font-size: 22px;
-    margin-left: 170px;
+    font-size: 20px;
+    margin-right: 60px;
   }
   .skill .skill-content .skill-value-four {
-    font-size: 22px;
-    margin-left: 100px;
+    font-size: 20px;
+    margin-right: 140px;
   }
   .skill .skill-content .skill-value-five {
-    font-size: 22px;
-    margin-left: 245px;
+    font-size: 20px;
+    margin-right: 115px;
   }
   .skill .skill-content .skill-value-six {
-    font-size: 22px;
-    margin-left: 225px;
+    font-size: 20px;
+    margin-right: 195px;
   }
   .skill .skill-content .skill-value-seven {
-    font-size: 22px;
-    margin-left: 170px;
+    font-size: 20px;
+    margin-right: 195px;
   }
   .skill .skill-content .skill-value-eight {
-    font-size: 22px;
-    margin-left: 120px;
+    font-size: 20px;
+    margin-right: 245px;
   }
   .skill .skill-content .skill-value-nine {
+    font-size: 20px;
+    margin-right: 115px;
+  }
+  .resume-header h1 {
+    font-size: 28px;
+  }
+  .resume-header h4 {
+    font-size: 18px;
+  }
+  .resume-content h4 {
+    font-size: 20px;
+  }
+  .resume-content .list-group-item .item-title {
+    font-size: 18px;
+  }
+  .resume-content .list-group-item .item-place-year {
+    font-size: 16px;
+  }
+  .resume-content .list-group-item .item-description {
+    font-size: 16px;
+  }
+  .contact-header h1 {
+    font-size: 28px;
+  }
+  .contact-header h4 {
+    font-size: 18px;
+  }
+  .contact-content .contact-item img {
+    margin-top: 50px;
+  }
+  .contact-content .contact-item h4 {
     font-size: 22px;
-    margin-left: 215px;
+  }
+  .contact-content .contact-item p {
+    font-size: 18px;
+  }
+  footer h4 {
+    font-size: 16px;
   }
 }
 
@@ -763,158 +827,129 @@ footer h4 {
     max-width: 20px;
     max-height: 20px;
   }
+  .portfolio-header h1 {
+    font-size: 34px;
+  }
+  .portfolio-header h4 {
+    font-size: 20px;
+  }
+  .portfolio-header hr {
+    width: 331px;
+  }
+  .portfolio-content .filter-porto {
+    font-size: 20px;
+  }
+  .skill .skill-header h1 {
+    font-size: 34px;
+  }
+  .skill .skill-header h4 {
+    font-size: 20px;
+  }
+  .skill .skill-content .skill-name {
+    font-size: 18px;
+  }
   .skill .skill-content .skill-value-one {
-    font-size: 22px;
-    margin-left: 335px;
+    font-size: 18px;
   }
   .skill .skill-content .skill-value-two {
-    font-size: 22px;
-    margin-left: 325px;
+    font-size: 18px;
   }
   .skill .skill-content .skill-value-three {
-    font-size: 22px;
-    margin-left: 200px;
+    font-size: 18px;
   }
   .skill .skill-content .skill-value-four {
-    font-size: 22px;
-    margin-left: 125px;
+    font-size: 18px;
   }
   .skill .skill-content .skill-value-five {
-    font-size: 22px;
-    margin-left: 275px;
+    font-size: 18px;
   }
   .skill .skill-content .skill-value-six {
-    font-size: 22px;
-    margin-left: 245px;
+    font-size: 18px;
   }
   .skill .skill-content .skill-value-seven {
-    font-size: 22px;
-    margin-left: 190px;
+    font-size: 18px;
   }
   .skill .skill-content .skill-value-eight {
-    font-size: 22px;
-    margin-left: 140px;
+    font-size: 18px;
+    margin-right: 240px;
   }
   .skill .skill-content .skill-value-nine {
+    font-size: 18px;
+  }
+  .resume-header h1 {
+    font-size: 34px;
+  }
+  .resume-header h4 {
+    font-size: 20px;
+  }
+  .resume-content h4 {
     font-size: 22px;
-    margin-left: 245px;
+  }
+  .resume-content .list-group-item .item-title {
+    font-size: 20px;
+  }
+  .resume-content .list-group-item .item-place-year {
+    font-size: 18px;
+  }
+  .resume-content .list-group-item .item-description {
+    font-size: 18px;
+  }
+  .contact-header h1 {
+    font-size: 34px;
+  }
+  .contact-header h4 {
+    font-size: 20px;
+  }
+  .contact-content .contact-item img {
+    margin-top: 50px;
+  }
+  .contact-content .contact-item h4 {
+    font-size: 24px;
+  }
+  .contact-content .contact-item p {
+    font-size: 20px;
+  }
+  footer h4 {
+    font-size: 16px;
   }
 }
 
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 500px) {
+  .skill .skill-content .skill-name {
+    font-size: 18px;
+  }
   .skill .skill-content .skill-value-one {
-    font-size: 22px;
-    margin-left: 300px;
+    font-size: 18px;
   }
   .skill .skill-content .skill-value-two {
-    font-size: 22px;
-    margin-left: 300px;
+    font-size: 18px;
   }
   .skill .skill-content .skill-value-three {
-    font-size: 22px;
-    margin-left: 170px;
+    font-size: 18px;
   }
   .skill .skill-content .skill-value-four {
-    font-size: 22px;
-    margin-left: 100px;
+    font-size: 18px;
+    margin-right: 125px;
   }
   .skill .skill-content .skill-value-five {
-    font-size: 22px;
-    margin-left: 245px;
+    font-size: 18px;
+    margin-right: 100px;
   }
   .skill .skill-content .skill-value-six {
-    font-size: 22px;
-    margin-left: 225px;
+    font-size: 18px;
+    margin-right: 170px;
   }
   .skill .skill-content .skill-value-seven {
-    font-size: 22px;
-    margin-left: 170px;
+    font-size: 18px;
+    margin-right: 170px;
   }
   .skill .skill-content .skill-value-eight {
-    font-size: 22px;
-    margin-left: 120px;
+    font-size: 18px;
+    margin-right: 215px;
   }
   .skill .skill-content .skill-value-nine {
-    font-size: 22px;
-    margin-left: 215px;
-  }
-}
-
-@media only screen and (max-width: 505px) {
-  .skill .skill-content .skill-value-one {
-    font-size: 22px;
-    margin-left: 270px;
-  }
-  .skill .skill-content .skill-value-two {
-    font-size: 22px;
-    margin-left: 270px;
-  }
-  .skill .skill-content .skill-value-three {
-    font-size: 22px;
-    margin-left: 140px;
-  }
-  .skill .skill-content .skill-value-four {
-    font-size: 22px;
-    margin-left: 70px;
-  }
-  .skill .skill-content .skill-value-five {
-    font-size: 22px;
-    margin-left: 215px;
-  }
-  .skill .skill-content .skill-value-six {
-    font-size: 22px;
-    margin-left: 205px;
-  }
-  .skill .skill-content .skill-value-seven {
-    font-size: 22px;
-    margin-left: 150px;
-  }
-  .skill .skill-content .skill-value-eight {
-    font-size: 22px;
-    margin-left: 100px;
-  }
-  .skill .skill-content .skill-value-nine {
-    font-size: 22px;
-    margin-left: 185px;
-  }
-}
-
-@media only screen and (max-width: 475px) {
-  .skill .skill-content .skill-value-one {
-    font-size: 22px;
-    margin-left: 240px;
-  }
-  .skill .skill-content .skill-value-two {
-    font-size: 22px;
-    margin-left: 240px;
-  }
-  .skill .skill-content .skill-value-three {
-    font-size: 22px;
-    margin-left: 110px;
-  }
-  .skill .skill-content .skill-value-four {
-    font-size: 22px;
-    margin-left: 50px;
-  }
-  .skill .skill-content .skill-value-five {
-    font-size: 22px;
-    margin-left: 195px;
-  }
-  .skill .skill-content .skill-value-six {
-    font-size: 22px;
-    margin-left: 185px;
-  }
-  .skill .skill-content .skill-value-seven {
-    font-size: 22px;
-    margin-left: 130px;
-  }
-  .skill .skill-content .skill-value-eight {
-    font-size: 22px;
-    margin-left: 85px;
-  }
-  .skill .skill-content .skill-value-nine {
-    font-size: 22px;
-    margin-left: 165px;
+    font-size: 18px;
+    margin-right: 100px;
   }
 }
 
@@ -966,44 +1001,89 @@ footer h4 {
     max-width: 18px;
     max-height: 18px;
   }
-}
-
-@media only screen and (max-width: 445px) {
+  .portfolio-header h1 {
+    font-size: 30px;
+  }
+  .portfolio-header h4 {
+    font-size: 18px;
+  }
+  .portfolio-header hr {
+    width: 295px;
+  }
+  .portfolio-content .filter-porto {
+    font-size: 18px;
+  }
+  .skill .skill-header h1 {
+    font-size: 30px;
+  }
+  .skill .skill-header h4 {
+    font-size: 18px;
+  }
+  .skill .skill-content .skill-name {
+    font-size: 16px;
+  }
   .skill .skill-content .skill-value-one {
-    font-size: 22px;
-    margin-left: 210px;
+    font-size: 16px;
   }
   .skill .skill-content .skill-value-two {
-    font-size: 22px;
-    margin-left: 215px;
+    font-size: 16px;
   }
   .skill .skill-content .skill-value-three {
-    font-size: 22px;
-    margin-left: 90px;
+    font-size: 16px;
   }
   .skill .skill-content .skill-value-four {
-    font-size: 22px;
-    margin-left: 35px;
+    font-size: 16px;
   }
   .skill .skill-content .skill-value-five {
-    font-size: 22px;
-    margin-left: 175px;
+    font-size: 16px;
   }
   .skill .skill-content .skill-value-six {
-    font-size: 22px;
-    margin-left: 165px;
+    font-size: 16px;
   }
   .skill .skill-content .skill-value-seven {
-    font-size: 22px;
-    margin-left: 110px;
+    font-size: 16px;
   }
   .skill .skill-content .skill-value-eight {
-    font-size: 22px;
-    margin-left: 70px;
+    font-size: 16px;
   }
   .skill .skill-content .skill-value-nine {
+    font-size: 16px;
+  }
+  .resume-header h1 {
+    font-size: 30px;
+  }
+  .resume-header h4 {
+    font-size: 18px;
+  }
+  .resume-content h4 {
+    font-size: 20px;
+  }
+  .resume-content .list-group-item .item-title {
+    font-size: 18px;
+  }
+  .resume-content .list-group-item .item-place-year {
+    font-size: 16px;
+  }
+  .resume-content .list-group-item .item-description {
+    font-size: 16px;
+  }
+  .contact-header h1 {
+    font-size: 30px;
+  }
+  .contact-header h4 {
+    font-size: 18px;
+  }
+  .contact-content .contact-item img {
+    margin-top: 50px;
+  }
+  .contact-content .contact-item h4 {
     font-size: 22px;
-    margin-left: 145px;
+  }
+  .contact-content .contact-item p {
+    font-size: 18px;
+  }
+  footer h4 {
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=main.css.map */
