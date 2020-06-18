@@ -625,6 +625,10 @@ footer h4 {
   .resume-content .list-group-item .item-title {
     font-size: 20px;
   }
+  .resume-content .large-margin {
+    padding-top: 28px;
+    padding-bottom: 18px;
+  }
   .contact-header h1 {
     font-size: 38px;
   }
@@ -756,6 +760,12 @@ footer h4 {
   }
   .resume-content .list-group-item .item-description {
     font-size: 16px;
+  }
+  .resume-content .resume-footer {
+    height: 40px;
+  }
+  .resume-content .large-margin {
+    padding-bottom: 15px;
   }
   .contact-header h1 {
     font-size: 28px;
@@ -893,6 +903,9 @@ footer h4 {
   }
   .resume-content .list-group-item .item-description {
     font-size: 18px;
+  }
+  .resume-content .large-margin {
+    padding-bottom: 20px;
   }
   .contact-header h1 {
     font-size: 34px;
@@ -1067,6 +1080,9 @@ footer h4 {
   .resume-content .list-group-item .item-description {
     font-size: 16px;
   }
+  .resume-content .large-margin {
+    padding-bottom: 20px;
+  }
   .contact-header h1 {
     font-size: 30px;
   }
@@ -1084,6 +1100,111 @@ footer h4 {
   }
   footer h4 {
     font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 383px) {
+  header {
+    min-height: 425px;
+  }
+  header .btn-cv {
+    max-width: 203px;
+    margin-left: -190px;
+    margin-top: 10px !important;
+    font-size: 16px;
+    padding: 7px 15px;
+  }
+  header .btn-more {
+    max-width: 203px;
+    margin-left: -140px;
+    margin-top: 120px !important;
+    font-size: 16px;
+    padding: 7px 11px;
+  }
+  header .pic-avatar {
+    margin-left: 170px;
+    margin-top: -150px;
+    max-width: 160px;
+    max-height: 261px;
+  }
+  header .pic-avatar .socmed {
+    margin-left: 7px;
+  }
+  header .pic-avatar .socmed img {
+    margin-top: 15px;
+    margin-right: 8px;
+    max-width: 15px;
+    max-height: 15px;
+  }
+  .skill .skill-content .skill-name {
+    font-size: 14px;
+  }
+  .skill .skill-content .skill-value-one {
+    font-size: 14px;
+    margin-right: 15px;
+  }
+  .skill .skill-content .skill-value-two {
+    font-size: 14px;
+    margin-right: 50px;
+  }
+  .skill .skill-content .skill-value-three {
+    font-size: 14px;
+    margin-right: 35px;
+  }
+  .skill .skill-content .skill-value-four {
+    font-size: 14px;
+    margin-right: 85px;
+  }
+  .skill .skill-content .skill-value-five {
+    font-size: 14px;
+    margin-right: 70px;
+  }
+  .skill .skill-content .skill-value-six {
+    font-size: 14px;
+    margin-right: 120px;
+  }
+  .skill .skill-content .skill-value-seven {
+    font-size: 14px;
+    margin-right: 120px;
+  }
+  .skill .skill-content .skill-value-eight {
+    font-size: 14px;
+    margin-right: 155px;
+  }
+  .skill .skill-content .skill-value-nine {
+    font-size: 14px;
+    margin-right: 70px;
+  }
+  .resume-content h4 {
+    font-size: 20px;
+  }
+  .resume-content .list-group-item {
+    padding-right: 20px;
+  }
+  .resume-content .list-group-item .item-title {
+    font-size: 16px;
+  }
+  .resume-content .list-group-item .item-place-year {
+    font-size: 14px;
+  }
+  .resume-content .list-group-item .item-description {
+    font-size: 14px;
+  }
+  .resume-content .large-margin {
+    padding-top: 23px;
+    padding-bottom: 15px;
+  }
+  .contact-content .contact-item img {
+    margin-top: 50px;
+  }
+  .contact-content .contact-item h4 {
+    font-size: 20px;
+  }
+  .contact-content .contact-item p {
+    font-size: 16px;
+  }
+  footer h4 {
+    font-size: 12px;
   }
 }
 /*# sourceMappingURL=main.css.map */
