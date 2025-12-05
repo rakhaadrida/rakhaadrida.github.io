@@ -17,12 +17,12 @@ header .title-text {
 
 header .title-text h1 {
   font-family: 'Lato', sans-serif;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: bold;
 }
 
 header .title-text h4 {
-  font-size: 28px;
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -89,12 +89,12 @@ header .pic-avatar .socmed img {
 
 .portfolio-header h1 {
   font-family: 'Lato', sans-serif;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: bold;
 }
 
 .portfolio-header h4 {
-  font-size: 24px;
+  font-size: 20px;
   color: #D8930C;
 }
 
@@ -209,12 +209,12 @@ header .pic-avatar .socmed img {
 
 .skill .skill-header h1 {
   font-family: 'Lato', sans-serif;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: bold;
 }
 
 .skill .skill-header h4 {
-  font-size: 24px;
+  font-size: 20px;
   color: #D8930C;
 }
 
@@ -302,12 +302,12 @@ header .pic-avatar .socmed img {
 
 .resume-header h1 {
   font-family: 'Lato', sans-serif;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: bold;
 }
 
 .resume-header h4 {
-  font-size: 24px;
+  font-size: 20px;
   color: #D8930C;
 }
 
@@ -320,7 +320,7 @@ header .pic-avatar .socmed img {
 }
 
 .resume-content h4 {
-  font-size: 28px;
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -386,13 +386,13 @@ header .pic-avatar .socmed img {
 .contact-header h1 {
   margin-top: 60px;
   font-family: 'Lato', sans-serif;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: bold;
   color: #ffffff;
 }
 
 .contact-header h4 {
-  font-size: 24px;
+  font-size: 20px;
   color: #D8930C;
 }
 
@@ -412,7 +412,7 @@ header .pic-avatar .socmed img {
 
 .contact-content .contact-item h4 {
   margin-top: 20px;
-  font-size: 28px;
+  font-size: 20px;
   color: #ffffff;
   font-weight: bold;
 }
@@ -553,7 +553,7 @@ footer h4 {
     font-size: 38px;
   }
   header .title-text h4 {
-    font-size: 22px;
+    font-size: 20px;
   }
   header .title-text p {
     font-size: 20px;
@@ -624,7 +624,7 @@ footer h4 {
     font-size: 20px;
   }
   .resume-content h4 {
-    font-size: 24px;
+    font-size: 20px;
   }
   .resume-content .list-group-item .item-title {
     font-size: 20px;
@@ -640,7 +640,7 @@ footer h4 {
     font-size: 20px;
   }
   .contact-content .contact-item h4 {
-    font-size: 24px;
+    font-size: 20px;
   }
   .contact-content .contact-item p {
     font-size: 20px;
@@ -781,7 +781,7 @@ footer h4 {
     margin-top: 50px;
   }
   .contact-content .contact-item h4 {
-    font-size: 22px;
+    font-size: 20px;
   }
   .contact-content .contact-item p {
     font-size: 18px;
@@ -1211,4 +1211,61 @@ footer h4 {
     font-size: 12px;
   }
 }
-/*# sourceMappingURL=main.css.map */
+
+.skills-section {
+  width: 100%;
+  padding: 50px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  /*background-color: #F6F6F6;*/
+}
+
+.section-title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  color: #0d274d;
+  margin-bottom: 5px;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 20px;
+  color: #f0a500;
+  margin-bottom: 40px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px 40px;
+}
+
+.skill-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 12px;
+  border-bottom: 1px dashed #ccc;
+  font-size: 20px;
+  color: #0d274d;
+}
+
+.skill-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.skill-icon {
+  width: 22px !important;
+  height: 22px !important;
+  max-width: 22px !important;
+  max-height: 22px !important;
+  object-fit: contain;
+}
+
+.skill-item strong {
+  color: #f0a500;
+  font-weight: 600;
+}
