@@ -1,3 +1,37 @@
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 body {
   background-color: #ffffff;
   font-family: 'Muli', sans-serif;
@@ -7,80 +41,228 @@ body {
 header {
   background: url("../images/header/banner@2x.png") no-repeat center;
   background-size: cover;
-  min-height: 600px;
+  min-height: 650px;
+  position: relative;
+  overflow: hidden;
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(4, 30, 68, 0.05) 0%, rgba(242, 168, 22, 0.02) 100%);
+  pointer-events: none;
+}
+
+header .container {
+  position: relative;
+  z-index: 1;
 }
 
 header .title-text {
-  margin-top: 186px;
+  margin-top: 140px;
   text-align: left;
+  animation: fadeInUp 0.8s ease-out;
 }
 
-header .title-text h1 {
+/* Intro label with accent */
+header .intro-label {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #F2A816;
+  padding: 8px 16px;
+  border: 1px solid rgba(242, 168, 22, 0.3);
+  border-radius: 20px;
+  margin-bottom: 24px;
+  animation: slideInDown 0.6s ease-out;
+}
+
+header .hero-intro {
+  margin-bottom: 8px;
+}
+
+/* Premium headline */
+header .hero-headline {
   font-family: 'Lato', sans-serif;
-  font-size: 40px;
-  font-weight: bold;
+  font-size: 52px;
+  font-weight: 900;
+  line-height: 1.2;
+  color: #041E44;
+  margin-bottom: 16px;
+  margin-top: 0;
+  letter-spacing: -0.5px;
+  animation: slideInDown 0.8s ease-out 0.1s both;
 }
 
-header .title-text h4 {
-  font-size: 20px;
-  font-weight: bold;
+/* Professional subheadline */
+header .hero-subheadline {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #345380;
+  margin-bottom: 12px;
+  margin-top: 12px;
+  font-weight: 400;
+  animation: fadeInUp 0.8s ease-out 0.2s both;
 }
 
-header .title-text p {
-  font-size: 24px;
+/* Value proposition */
+header .hero-value-prop {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #556b82;
+  margin-bottom: 32px;
+  margin-top: 12px;
+  font-weight: 400;
+  animation: fadeInUp 0.8s ease-out 0.3s both;
 }
 
 header .image-rounded {
   border-radius: 1.25rem !important;
+  box-shadow: 0 20px 40px rgba(4, 30, 68, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-header .btn-cv {
-  max-width: 203px;
+header .image-rounded:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 30px 60px rgba(4, 30, 68, 0.15);
+}
+
+/* CTA Button Container */
+header .hero-cta {
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+  animation: fadeInUp 0.8s ease-out 0.4s both;
+}
+
+/* Primary Button (Download CV) */
+header .btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   background-color: #F2A816;
   color: #ffffff;
-  font-size: 22px;
-  font-weight: bold;
-  border-radius: 10px;
-  padding: 10px 23px;
-  float: left;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 14px 32px;
+  border: 2px solid #F2A816;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 12px rgba(242, 168, 22, 0.3);
+  cursor: pointer;
 }
 
-header .btn-cv:hover {
+header .btn-primary:hover {
   background-color: #F3B12F;
+  border-color: #F3B12F;
+  box-shadow: 0 8px 24px rgba(242, 168, 22, 0.4);
+  transform: translateY(-2px);
+  text-decoration: none;
   color: #ffffff;
 }
 
-header .btn-more {
-  max-width: 203px;
-  margin-left: 20px;
+header .btn-primary:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(242, 168, 22, 0.2);
+}
+
+header .btn-primary .btn-icon {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+header .btn-primary:hover .btn-icon {
+  transform: translateY(2px);
+}
+
+/* Secondary Button (View Work) */
+header .btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: transparent;
+  color: #052758;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 14px 32px;
+  border: 2px solid #052758;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+header .btn-secondary:hover {
   background-color: #052758;
   color: #ffffff;
-  font-size: 22px;
-  border-radius: 10px;
-  padding: 10px 17px;
-  float: left;
+  box-shadow: 0 8px 24px rgba(5, 39, 88, 0.2);
+  transform: translateY(-2px);
+  text-decoration: none;
 }
 
-header .btn-more:hover {
-  background-color: #0A3C85;
-  color: #ffffff;
+header .btn-secondary:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(5, 39, 88, 0.2);
+}
+
+header .btn-secondary .btn-icon {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+header .btn-secondary:hover .btn-icon {
+  transform: translateX(3px);
 }
 
 header .pic-avatar {
-  margin-top: 65px;
+  margin-top: 40px;
   max-width: 370px;
   max-height: 471px;
+  animation: fadeInRight 0.8s ease-out 0.2s both;
 }
 
 header .pic-avatar .socmed {
   margin-left: 35px;
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+header .pic-avatar .socmed a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(5, 39, 88, 0.05);
+  border: 1px solid rgba(5, 39, 88, 0.1);
+  transition: all 0.3s ease;
+}
+
+header .pic-avatar .socmed a:hover {
+  background-color: #F2A816;
+  border-color: #F2A816;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(242, 168, 22, 0.3);
 }
 
 header .pic-avatar .socmed img {
-  margin-top: 25px;
-  margin-right: 20px;
-  max-width: 30px;
-  max-height: 30px;
+  max-width: 20px;
+  max-height: 20px;
+  transition: filter 0.3s ease;
+}
+
+header .pic-avatar .socmed a:hover img {
+  filter: brightness(2);
 }
 
 .portfolio-header {
@@ -524,12 +706,15 @@ footer h4 {
 @media only screen and (max-width: 1199px) {
   header .pic-avatar .socmed {
     margin-left: 10px;
+    gap: 10px;
+  }
+  header .pic-avatar .socmed a {
+    width: 36px;
+    height: 36px;
   }
   header .pic-avatar .socmed img {
-    margin-top: 25px;
-    margin-right: 15px;
-    max-width: 30px;
-    max-height: 30px;
+    max-width: 18px;
+    max-height: 18px;
   }
   .contact-content .contact-item .socmed-footer {
     margin-left: 0px;
@@ -544,36 +729,40 @@ footer h4 {
 
 @media only screen and (max-width: 991px) {
   header {
-    min-height: 420px;
+    min-height: 500px;
   }
   header .title-text {
-    margin-top: 100px;
+    margin-top: 80px;
   }
-  header .title-text h1 {
-    font-size: 38px;
+  header .hero-headline {
+    font-size: 44px;
   }
-  header .title-text h4 {
-    font-size: 20px;
+  header .hero-subheadline {
+    font-size: 16px;
   }
-  header .title-text p {
-    font-size: 20px;
+  header .hero-value-prop {
+    font-size: 15px;
   }
-  header .btn-cv {
-    font-size: 18px;
-    padding: 8px 15px;
+  header .btn-primary,
+  header .btn-secondary {
+    font-size: 15px;
+    padding: 12px 28px;
   }
-  header .btn-more {
-    font-size: 18px;
-    padding: 8px 15px;
+  header .pic-avatar {
+    margin-top: 30px;
+    max-width: 320px;
   }
   header .pic-avatar .socmed {
     margin-left: 15px;
+    gap: 10px;
+  }
+  header .pic-avatar .socmed a {
+    width: 36px;
+    height: 36px;
   }
   header .pic-avatar .socmed img {
-    margin-top: 25px;
-    margin-right: 15px;
-    max-width: 20px;
-    max-height: 20px;
+    max-width: 18px;
+    max-height: 18px;
   }
   .portfolio-header h1 {
     font-size: 38px;
@@ -649,46 +838,53 @@ footer h4 {
 
 @media only screen and (max-width: 767px) {
   header {
-    min-height: 300px;
+    min-height: 380px;
   }
   header .title-text {
-    margin-top: 70px;
+    margin-top: 50px;
   }
-  header .title-text h1 {
-    font-size: 28px;
+  header .hero-headline {
+    font-size: 32px;
+    margin-bottom: 12px;
   }
-  header .title-text h4 {
-    font-size: 18px;
+  header .hero-subheadline {
+    font-size: 15px;
+    margin-bottom: 8px;
   }
-  header .title-text p {
-    font-size: 16px;
+  header .hero-value-prop {
+    font-size: 14px;
+    margin-bottom: 24px;
   }
-  header .btn-cv {
-    max-width: 173px;
-    margin-top: 10px !important;
-    font-size: 16px;
-    padding: 5px 10px;
+  header .intro-label {
+    font-size: 11px;
+    padding: 6px 12px;
+    margin-bottom: 16px;
   }
-  header .btn-more {
-    max-width: 173px;
-    margin-left: 5px;
-    margin-top: 10px !important;
-    font-size: 16px;
-    padding: 5px 10px;
+  header .hero-cta {
+    gap: 12px;
+    margin-top: 20px;
+  }
+  header .btn-primary,
+  header .btn-secondary {
+    font-size: 14px;
+    padding: 11px 24px;
   }
   header .pic-avatar {
-    margin-top: 40px;
-    max-width: 270px;
-    max-height: 371px;
+    margin-top: 30px;
+    max-width: 240px;
+    max-height: 330px;
   }
   header .pic-avatar .socmed {
     margin-left: 7px;
+    gap: 8px;
+  }
+  header .pic-avatar .socmed a {
+    width: 32px;
+    height: 32px;
   }
   header .pic-avatar .socmed img {
-    margin-top: 20px;
-    margin-right: 8px;
-    max-width: 17px;
-    max-height: 17px;
+    max-width: 16px;
+    max-height: 16px;
   }
   .portfolio-header h1 {
     font-size: 28px;
@@ -793,53 +989,56 @@ footer h4 {
 
 @media only screen and (max-width: 575px) {
   header {
-    min-height: 490px;
+    min-height: 420px;
   }
   header .title-text {
     text-align: center;
-    margin-top: 45px;
+    margin-top: 40px;
   }
-  header .title-text h1 {
-    font-size: 36px;
+  header .hero-headline {
+    font-size: 28px;
+    margin-bottom: 10px;
   }
-  header .title-text h4 {
-    margin-top: -5px;
-    font-size: 22px;
+  header .hero-subheadline {
+    font-size: 14px;
+    margin-bottom: 8px;
   }
-  header .title-text p {
-    margin-top: -5px;
-    font-size: 20px;
+  header .hero-value-prop {
+    font-size: 13px;
+    margin-bottom: 20px;
   }
-  header .btn-cv {
-    max-width: 203px;
-    margin-left: -230px;
-    margin-top: 10px !important;
-    font-size: 18px;
-    padding: 8px 19px;
-    float: none;
+  header .intro-label {
+    font-size: 10px;
+    padding: 6px 12px;
+    margin-bottom: 12px;
   }
-  header .btn-more {
-    max-width: 203px;
-    margin-left: -162px;
-    margin-top: 130px !important;
-    font-size: 18px;
-    padding: 8px 15px;
-    float: none;
+  header .hero-cta {
+    gap: 10px;
+    margin-top: 16px;
+    justify-content: center;
+  }
+  header .btn-primary,
+  header .btn-secondary {
+    font-size: 13px;
+    padding: 10px 20px;
   }
   header .pic-avatar {
-    margin-left: 200px;
-    margin-top: -170px;
+    margin-top: 20px;
     max-width: 200px;
-    max-height: 301px;
+    max-height: 280px;
   }
   header .pic-avatar .socmed {
-    margin-left: 7px;
+    margin-left: 0;
+    gap: 8px;
+    justify-content: center;
+  }
+  header .pic-avatar .socmed a {
+    width: 32px;
+    height: 32px;
   }
   header .pic-avatar .socmed img {
-    margin-top: 15px;
-    margin-right: 8px;
-    max-width: 20px;
-    max-height: 20px;
+    max-width: 16px;
+    max-height: 16px;
   }
   .portfolio-header h1 {
     font-size: 34px;
@@ -972,51 +1171,57 @@ footer h4 {
 
 @media only screen and (max-width: 460px) {
   header {
-    min-height: 425px;
+    min-height: 400px;
   }
   header .title-text {
     text-align: center;
-    margin-top: 45px;
+    margin-top: 35px;
   }
-  header .title-text h1 {
-    font-size: 30px;
+  header .hero-headline {
+    font-size: 24px;
+    margin-bottom: 8px;
   }
-  header .title-text h4 {
-    margin-top: -5px;
-    font-size: 20px;
+  header .hero-subheadline {
+    font-size: 13px;
+    margin-bottom: 6px;
   }
-  header .title-text p {
-    margin-top: -5px;
-    font-size: 18px;
+  header .hero-value-prop {
+    font-size: 12px;
+    margin-bottom: 16px;
   }
-  header .btn-cv {
-    max-width: 203px;
-    margin-left: -190px;
-    margin-top: 10px !important;
-    font-size: 16px;
-    padding: 7px 15px;
+  header .intro-label {
+    font-size: 9px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
   }
-  header .btn-more {
-    max-width: 203px;
-    margin-left: -140px;
-    margin-top: 120px !important;
-    font-size: 16px;
-    padding: 7px 11px;
+  header .hero-cta {
+    gap: 8px;
+    margin-top: 14px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  header .btn-primary,
+  header .btn-secondary {
+    font-size: 12px;
+    padding: 9px 18px;
   }
   header .pic-avatar {
-    margin-left: 200px;
-    margin-top: -150px;
-    max-width: 160px;
-    max-height: 261px;
+    margin-top: 16px;
+    max-width: 180px;
+    max-height: 250px;
   }
   header .pic-avatar .socmed {
-    margin-left: 7px;
+    margin-left: 0;
+    gap: 6px;
+    justify-content: center;
+  }
+  header .pic-avatar .socmed a {
+    width: 30px;
+    height: 30px;
   }
   header .pic-avatar .socmed img {
-    margin-top: 15px;
-    margin-right: 8px;
-    max-width: 18px;
-    max-height: 18px;
+    max-width: 14px;
+    max-height: 14px;
   }
   .portfolio-header h1 {
     font-size: 30px;
