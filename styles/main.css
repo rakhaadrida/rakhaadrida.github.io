@@ -528,7 +528,7 @@ header .pic-avatar .socmed a:hover img {
 
 .experience-header {
     background: linear-gradient(135deg, #0f172a 0%, #1a2954 50%, #162555 100%);
-    min-height: 320px;
+    min-height: 200px;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -586,13 +586,13 @@ header .pic-avatar .socmed a:hover img {
 .experience-header h4 {
     font-size: 18px;
     color: #94a3b8;
-    margin-top: 12px;
+    margin-top: 10px;
 }
 
 .experience-content {
     margin-top: 0;
     margin-bottom: 0;
-    padding: 80px 0;
+    padding: 50px 0;
     background: linear-gradient(135deg, #0f172a 0%, #1a2954 50%, #162555 100%);
     position: relative;
     overflow: hidden;
@@ -631,9 +631,12 @@ header .pic-avatar .socmed a:hover img {
     font-weight: 700;
     color: #f8fafc;
     margin-bottom: 28px;
-    padding-bottom: 16px;
-    border-bottom: 2px solid rgba(6, 147, 227, 0.3);
+    padding-bottom: 26px;
     letter-spacing: -0.3px;
+}
+
+.experience-title {
+    color: #f0f4f8 !important;
 }
 
 /* Experience Card */
@@ -709,7 +712,6 @@ header .pic-avatar .socmed a:hover img {
     padding: 6px 12px;
     border-radius: 16px;
     border: 1px solid rgba(96, 213, 255, 0.3);
-    text-transform: uppercase;
     letter-spacing: 0.3px;
 }
 
@@ -760,6 +762,7 @@ header .pic-avatar .socmed a:hover img {
 .freelance-link {
     font-size: 14px;
     margin-top: 18px;
+    margin-bottom: 5px;
     padding-top: 12px;
     border-top: 1px solid rgba(6, 147, 227, 0.2);
     color: #cbd5e1;
@@ -781,23 +784,23 @@ header .pic-avatar .socmed a:hover img {
     .experience-header h1 {
         font-size: 36px;
     }
-    
+
     .section-title {
         font-size: 22px;
     }
-    
+
     .experience-card {
         padding: 24px;
     }
-    
+
     .job-title {
         font-size: 18px;
     }
-    
+
     .card-header {
         flex-direction: column;
     }
-    
+
     .period {
         margin-top: 8px;
     }
@@ -807,38 +810,38 @@ header .pic-avatar .socmed a:hover img {
     .experience-header h1 {
         font-size: 28px;
     }
-    
+
     .experience-header h4 {
         font-size: 16px;
     }
-    
+
     .section-title {
         font-size: 20px;
         margin-bottom: 20px;
     }
-    
+
     .experience-card {
         padding: 18px;
         margin-bottom: 18px;
     }
-    
+
     .job-title {
         font-size: 16px;
     }
-    
+
     .company {
         font-size: 14px;
     }
-    
+
     .summary {
         font-size: 15px;
     }
-    
+
     .achievements li {
         font-size: 14px;
         padding-left: 22px;
     }
-    
+
     .tech-badge {
         font-size: 11px;
         padding: 5px 10px;
@@ -906,7 +909,7 @@ header .pic-avatar .socmed a:hover img {
 }
 
 .education-header {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .degree {
@@ -945,28 +948,28 @@ header .pic-avatar .socmed a:hover img {
     font-weight: 600;
 }
 
-.education-meta .field {
-    background-color: rgba(96, 213, 255, 0.12);
-    color: #60d5ff;
-    padding: 4px 12px;
-    border-radius: 12px;
-    font-size: 13px;
-    font-weight: 600;
-    border: 1px solid rgba(96, 213, 255, 0.2);
-}
-
-.education-meta .gpa {
-    background-color: rgba(96, 213, 255, 0.12);
-    color: #60d5ff;
-    padding: 4px 12px;
-    border-radius: 12px;
-    font-size: 13px;
-    font-weight: 600;
-    border: 1px solid rgba(96, 213, 255, 0.2);
-}
-
 .education-highlights {
     margin-top: 0;
+}
+
+.education-highlights .field {
+    background-color: rgba(96, 213, 255, 0.12);
+    color: #60d5ff;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 600;
+    border: 1px solid rgba(96, 213, 255, 0.2);
+}
+
+.education-highlights .gpa {
+    background-color: rgba(96, 213, 255, 0.12);
+    color: #60d5ff;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 600;
+    border: 1px solid rgba(96, 213, 255, 0.2);
 }
 
 .education-highlights h4 {
@@ -975,7 +978,7 @@ header .pic-avatar .socmed a:hover img {
     font-weight: 600;
     color: #f0f4f8;
     margin-bottom: 10px;
-    margin-top: 0;
+    margin-top: 20px;
 }
 
 .education-highlights p {
@@ -990,15 +993,15 @@ header .pic-avatar .socmed a:hover img {
     .experience-content {
         padding: 60px 0;
     }
-    
+
     .section-title {
         font-size: 22px;
     }
-    
+
     .experience-card {
         padding: 24px;
     }
-    
+
     .job-title {
         font-size: 18px;
     }
@@ -1008,34 +1011,34 @@ header .pic-avatar .socmed a:hover img {
     .experience-content {
         padding: 40px 0;
     }
-    
+
     .section-title {
         font-size: 20px;
         margin-bottom: 20px;
     }
-    
+
     .experience-card {
         padding: 18px;
         margin-bottom: 18px;
     }
-    
+
     .job-title {
         font-size: 16px;
     }
-    
+
     .company {
         font-size: 14px;
     }
-    
+
     .summary {
         font-size: 15px;
     }
-    
+
     .achievements li {
         font-size: 14px;
         padding-left: 22px;
     }
-    
+
     .tech-badge {
         font-size: 11px;
         padding: 5px 10px;
@@ -1048,11 +1051,11 @@ header .pic-avatar .socmed a:hover img {
         font-size: 28px;
         margin-bottom: 32px;
     }
-    
+
     .education-card {
         padding: 28px;
     }
-    
+
     .degree {
         font-size: 22px;
     }
@@ -1062,38 +1065,38 @@ header .pic-avatar .socmed a:hover img {
     .education-section {
         padding: 50px 0;
     }
-    
+
     .education-title {
         font-size: 24px;
         margin-bottom: 24px;
     }
-    
+
     .education-card {
         padding: 20px;
     }
-    
+
     .degree {
         font-size: 20px;
     }
-    
+
     .university {
         font-size: 15px;
     }
-    
+
     .education-meta {
         gap: 8px;
         margin-bottom: 16px;
         padding-bottom: 16px;
     }
-    
+
     .education-meta span {
         font-size: 13px;
     }
-    
+
     .education-highlights h4 {
         font-size: 15px;
     }
-    
+
     .education-highlights p {
         font-size: 14px;
     }
@@ -1985,7 +1988,7 @@ footer h4 {
 
 .section-title {
     text-align: center;
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 700;
     color: #0d274d;
     margin-bottom: 5px;
