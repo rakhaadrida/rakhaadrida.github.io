@@ -591,9 +591,33 @@ header .pic-avatar .socmed a:hover img {
 
 .experience-content {
     margin-top: 0;
-    margin-bottom: 60px;
-    padding: 60px 0;
-    background: linear-gradient(180deg, rgba(6, 147, 227, 0.02) 0%, transparent 100%);
+    margin-bottom: 0;
+    padding: 80px 0;
+    background: linear-gradient(135deg, #0f172a 0%, #1a2954 50%, #162555 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.experience-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:
+        linear-gradient(90deg, rgba(6, 147, 227, 0.04) 1px, transparent 1px),
+        linear-gradient(rgba(6, 147, 227, 0.04) 1px, transparent 1px);
+    background-size: 60px 60px;
+    background-position:
+        0 0,
+        30px 30px;
+    pointer-events: none;
+}
+
+.experience-content .container {
+    position: relative;
+    z-index: 1;
 }
 
 .experience-section {
@@ -603,30 +627,32 @@ header .pic-avatar .socmed a:hover img {
 
 .section-title {
     font-family: "Lato", sans-serif;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 700;
-    color: #041e44;
+    color: #f8fafc;
     margin-bottom: 28px;
-    padding-bottom: 12px;
-    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 16px;
+    border-bottom: 2px solid rgba(6, 147, 227, 0.3);
     letter-spacing: -0.3px;
 }
 
 /* Experience Card */
 .experience-card {
-    background-color: #ffffff;
-    border: 1px solid #e2e8f0;
+    background-color: rgba(20, 30, 50, 0.6);
+    border: 1px solid rgba(6, 147, 227, 0.25);
     border-radius: 12px;
     padding: 28px;
     margin-bottom: 24px;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 2px 8px rgba(6, 147, 227, 0.08);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
 }
 
 .experience-card:hover {
-    border-color: #0693e3;
-    box-shadow: 0 8px 24px rgba(6, 147, 227, 0.15);
-    transform: translateY(-2px);
+    border-color: rgba(6, 147, 227, 0.5);
+    box-shadow: 0 12px 32px rgba(6, 147, 227, 0.2);
+    transform: translateY(-4px);
+    background-color: rgba(20, 40, 70, 0.8);
 }
 
 /* Card Header */
@@ -646,7 +672,7 @@ header .pic-avatar .socmed a:hover img {
     font-family: "Lato", sans-serif;
     font-size: 20px;
     font-weight: 700;
-    color: #041e44;
+    color: #f0f4f8;
     margin: 0 0 6px 0;
     letter-spacing: -0.2px;
 }
@@ -655,14 +681,14 @@ header .pic-avatar .socmed a:hover img {
     display: block;
     font-size: 15px;
     font-weight: 600;
-    color: #0693e3;
+    color: #60d5ff;
 }
 
 .period {
     display: inline-block;
     font-size: 14px;
     font-weight: 500;
-    color: #64748b;
+    color: #cbd5e1;
     white-space: nowrap;
 }
 
@@ -678,11 +704,11 @@ header .pic-avatar .socmed a:hover img {
     display: inline-block;
     font-size: 12px;
     font-weight: 600;
-    background-color: rgba(6, 147, 227, 0.08);
-    color: #0693e3;
+    background-color: rgba(96, 213, 255, 0.12);
+    color: #60d5ff;
     padding: 6px 12px;
     border-radius: 16px;
-    border: 1px solid rgba(6, 147, 227, 0.2);
+    border: 1px solid rgba(96, 213, 255, 0.3);
     text-transform: uppercase;
     letter-spacing: 0.3px;
 }
@@ -691,7 +717,7 @@ header .pic-avatar .socmed a:hover img {
 .summary {
     font-size: 16px;
     line-height: 1.6;
-    color: #475569;
+    color: #cbd5e1;
     margin-bottom: 18px;
     margin-top: 0;
 }
@@ -709,7 +735,7 @@ header .pic-avatar .socmed a:hover img {
 .achievements li {
     font-size: 15px;
     line-height: 1.6;
-    color: #64748b;
+    color: #b0c4de;
     padding-left: 24px;
     position: relative;
     transition: color 0.3s ease;
@@ -722,12 +748,12 @@ header .pic-avatar .socmed a:hover img {
     top: 6px;
     width: 8px;
     height: 8px;
-    background-color: #0693e3;
+    background-color: #60d5ff;
     border-radius: 50%;
 }
 
 .experience-card:hover .achievements li {
-    color: #475569;
+    color: #cdd8e8;
 }
 
 /* Freelance Link */
@@ -735,18 +761,19 @@ header .pic-avatar .socmed a:hover img {
     font-size: 14px;
     margin-top: 18px;
     padding-top: 12px;
-    border-top: 1px solid #e2e8f0;
+    border-top: 1px solid rgba(6, 147, 227, 0.2);
+    color: #cbd5e1;
 }
 
 .freelance-link a {
-    color: #0693e3;
+    color: #60d5ff;
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s ease;
 }
 
 .freelance-link a:hover {
-    color: #0580c8;
+    color: #7fdbff;
 }
 
 /* Responsive */
@@ -822,34 +849,60 @@ header .pic-avatar .socmed a:hover img {
 
 .education-section {
     padding: 80px 0;
-    background-color: #ffffff;
+    background: linear-gradient(135deg, #0f172a 0%, #1a2954 50%, #162555 100%);
     margin-top: 0;
     animation: fadeInUp 0.8s ease-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.education-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:
+        linear-gradient(90deg, rgba(6, 147, 227, 0.04) 1px, transparent 1px),
+        linear-gradient(rgba(6, 147, 227, 0.04) 1px, transparent 1px);
+    background-size: 60px 60px;
+    background-position:
+        0 0,
+        30px 30px;
+    pointer-events: none;
+}
+
+.education-section .container {
+    position: relative;
+    z-index: 1;
 }
 
 .education-title {
     font-family: "Lato", sans-serif;
     font-size: 32px;
     font-weight: 700;
-    color: #041e44;
+    color: #f8fafc;
     margin-bottom: 40px;
     text-align: center;
     letter-spacing: -0.3px;
 }
 
 .education-card {
-    background: linear-gradient(135deg, rgba(6, 147, 227, 0.03) 0%, rgba(6, 147, 227, 0.01) 100%);
-    border: 1px solid rgba(6, 147, 227, 0.15);
+    background: rgba(20, 30, 50, 0.5);
+    border: 1px solid rgba(6, 147, 227, 0.25);
     border-radius: 12px;
     padding: 32px;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     backdrop-filter: blur(10px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
 .education-card:hover {
-    border-color: rgba(6, 147, 227, 0.3);
-    box-shadow: 0 8px 24px rgba(6, 147, 227, 0.1);
-    transform: translateY(-2px);
+    border-color: rgba(6, 147, 227, 0.5);
+    box-shadow: 0 12px 32px rgba(6, 147, 227, 0.15);
+    transform: translateY(-4px);
+    background: rgba(20, 40, 70, 0.7);
 }
 
 .education-header {
@@ -860,7 +913,7 @@ header .pic-avatar .socmed a:hover img {
     font-family: "Lato", sans-serif;
     font-size: 24px;
     font-weight: 700;
-    color: #041e44;
+    color: #f0f4f8;
     margin: 0 0 8px 0;
     letter-spacing: -0.2px;
 }
@@ -869,7 +922,7 @@ header .pic-avatar .socmed a:hover img {
     display: block;
     font-size: 16px;
     font-weight: 600;
-    color: #0693e3;
+    color: #60d5ff;
 }
 
 .education-meta {
@@ -878,36 +931,38 @@ header .pic-avatar .socmed a:hover img {
     flex-wrap: wrap;
     margin-bottom: 24px;
     padding-bottom: 20px;
-    border-bottom: 1px solid rgba(6, 147, 227, 0.15);
+    border-bottom: 1px solid rgba(6, 147, 227, 0.2);
 }
 
 .education-meta span {
     font-size: 14px;
     font-weight: 500;
-    color: #64748b;
+    color: #cbd5e1;
 }
 
 .education-meta .graduation-year {
-    color: #0693e3;
+    color: #60d5ff;
     font-weight: 600;
 }
 
 .education-meta .field {
-    background-color: rgba(6, 147, 227, 0.1);
-    color: #0693e3;
+    background-color: rgba(96, 213, 255, 0.12);
+    color: #60d5ff;
     padding: 4px 12px;
     border-radius: 12px;
     font-size: 13px;
     font-weight: 600;
+    border: 1px solid rgba(96, 213, 255, 0.2);
 }
 
 .education-meta .gpa {
-    background-color: rgba(6, 147, 227, 0.1);
-    color: #0693e3;
+    background-color: rgba(96, 213, 255, 0.12);
+    color: #60d5ff;
     padding: 4px 12px;
     border-radius: 12px;
     font-size: 13px;
     font-weight: 600;
+    border: 1px solid rgba(96, 213, 255, 0.2);
 }
 
 .education-highlights {
@@ -918,7 +973,7 @@ header .pic-avatar .socmed a:hover img {
     font-family: "Lato", sans-serif;
     font-size: 16px;
     font-weight: 600;
-    color: #041e44;
+    color: #f0f4f8;
     margin-bottom: 10px;
     margin-top: 0;
 }
@@ -926,8 +981,65 @@ header .pic-avatar .socmed a:hover img {
 .education-highlights p {
     font-size: 15px;
     line-height: 1.6;
-    color: #475569;
+    color: #b0c4de;
     margin: 0;
+}
+
+/* Experience Responsive Dark Background */
+@media only screen and (max-width: 991px) {
+    .experience-content {
+        padding: 60px 0;
+    }
+    
+    .section-title {
+        font-size: 22px;
+    }
+    
+    .experience-card {
+        padding: 24px;
+    }
+    
+    .job-title {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .experience-content {
+        padding: 40px 0;
+    }
+    
+    .section-title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .experience-card {
+        padding: 18px;
+        margin-bottom: 18px;
+    }
+    
+    .job-title {
+        font-size: 16px;
+    }
+    
+    .company {
+        font-size: 14px;
+    }
+    
+    .summary {
+        font-size: 15px;
+    }
+    
+    .achievements li {
+        font-size: 14px;
+        padding-left: 22px;
+    }
+    
+    .tech-badge {
+        font-size: 11px;
+        padding: 5px 10px;
+    }
 }
 
 /* Education Responsive */
