@@ -404,7 +404,6 @@ header .pic-avatar .socmed a:hover img {
     backdrop-filter: blur(10px);
     display: flex;
     flex-direction: row;
-    height: 320px;
     min-height: 320px;
 }
 
@@ -558,11 +557,11 @@ header .pic-avatar .socmed a:hover img {
     .project-card {
         height: 280px;
     }
-    
+
     .project-content {
         padding: 28px;
     }
-    
+
     .project-title {
         font-size: 24px;
     }
@@ -572,61 +571,61 @@ header .pic-avatar .socmed a:hover img {
     .portfolio-header {
         min-height: 240px;
     }
-    
+
     .portfolio-header h1 {
         font-size: 28px;
     }
-    
+
     .portfolio-header h4 {
         font-size: 16px;
     }
-    
+
     .portfolio-content {
         padding: 50px 0;
     }
-    
+
     .projects-grid {
         gap: 24px;
     }
-    
+
     .project-card {
         flex-direction: column;
         height: auto;
         min-height: auto;
     }
-    
+
     .project-image {
         width: 100%;
         height: 200px;
         aspect-ratio: 16 / 9;
     }
-    
+
     .project-content {
         width: 100%;
         padding: 24px;
     }
-    
+
     .project-title {
         font-size: 22px;
         margin-top: 8px;
     }
-    
+
     .project-description {
         font-size: 14px;
         margin-bottom: 16px;
     }
-    
+
     .tech-tag {
         font-size: 11px;
         padding: 5px 10px;
     }
-    
+
     .project-actions {
         flex-direction: column;
         align-items: flex-start;
         gap: 12px;
     }
-    
+
     .action-primary,
     .action-secondary {
         width: 100%;
