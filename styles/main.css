@@ -388,8 +388,8 @@ header .pic-avatar .socmed a:hover img {
 }
 
 .projects-grid {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 32px;
 }
 
@@ -404,7 +404,7 @@ header .pic-avatar .socmed a:hover img {
     backdrop-filter: blur(10px);
     display: flex;
     flex-direction: row;
-    min-height: 320px;
+    height: 320px;
 }
 
 .project-card:hover {
@@ -553,9 +553,9 @@ header .pic-avatar .socmed a:hover img {
 }
 
 /* Responsive */
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1200px) {
     .project-card {
-        height: 280px;
+        height: 300px;
     }
 
     .project-content {
@@ -564,6 +564,25 @@ header .pic-avatar .socmed a:hover img {
 
     .project-title {
         font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 28px;
+    }
+
+    .project-card {
+        height: 280px;
+    }
+
+    .project-content {
+        padding: 24px;
+    }
+
+    .project-title {
+        font-size: 22px;
     }
 }
 
@@ -585,13 +604,13 @@ header .pic-avatar .socmed a:hover img {
     }
 
     .projects-grid {
+        grid-template-columns: 1fr;
         gap: 24px;
     }
 
     .project-card {
         flex-direction: column;
         height: auto;
-        min-height: auto;
     }
 
     .project-image {
