@@ -390,7 +390,7 @@ header .pic-avatar .socmed a:hover img {
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 32px 0;
+    gap: 32px;
 }
 
 /* Project Card */
@@ -403,8 +403,9 @@ header .pic-avatar .socmed a:hover img {
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
     display: flex;
-    flex-direction: row;
-    height: 320px;
+    flex-direction: column;
+    height: 100%;
+    min-height: 550px;
 }
 
 .project-card:hover {
@@ -417,9 +418,11 @@ header .pic-avatar .socmed a:hover img {
 .project-image {
     position: relative;
     overflow: hidden;
-    width: 55%;
+    width: 100%;
+    height: 180px;
     background: rgba(0, 0, 0, 0.3);
     flex-shrink: 0;
+    aspect-ratio: 16 / 9;
 }
 
 .project-image img {
@@ -434,22 +437,18 @@ header .pic-avatar .socmed a:hover img {
 }
 
 .project-content {
-    padding: 32px;
-    width: 45%;
+    padding: 24px;
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.project-title {
-    font-family: "Lato", sans-serif;
-    font-size: 28px;
-    font-weight: 700;
-    color: #f0f4f8;
-    margin: 12px 0 16px 0;
-    letter-spacing: -0.3px;
-    line-height: 1.3;
+.project-badges {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 16px;
 }
 
 .project-category {
@@ -463,28 +462,46 @@ header .pic-avatar .socmed a:hover img {
     border: 1px solid rgba(96, 213, 255, 0.3);
     text-transform: uppercase;
     letter-spacing: 0.4px;
-    width: fit-content;
+}
+
+.project-title {
+    font-family: "Lato", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #f0f4f8;
+    margin: 0 0 12px 0;
+    letter-spacing: -0.2px;
+    line-height: 1.4;
 }
 
 .project-description {
-    font-size: 15px;
+    font-size: 14px;
     line-height: 1.6;
     color: #cbd5e1;
-    margin-bottom: 20px;
-    flex: 1;
+    margin-bottom: 16px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.divider-line {
+    height: 1px;
+    background: rgba(6, 147, 227, 0.15);
+    margin: 16px 0;
 }
 
 .tech-section {
-    margin-bottom: 24px;
+    margin-bottom: 16px;
 }
 
 .tech-label {
     display: block;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 700;
     text-transform: uppercase;
     color: #cbd5e1;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     letter-spacing: 0.5px;
 }
 
@@ -496,7 +513,7 @@ header .pic-avatar .socmed a:hover img {
 
 .tech-tag {
     display: inline-block;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 600;
     background-color: rgba(96, 213, 255, 0.08);
     color: #60d5ff;
@@ -509,10 +526,11 @@ header .pic-avatar .socmed a:hover img {
 
 .project-actions {
     display: flex;
-    gap: 16px;
+    gap: 12px;
     align-items: center;
-    padding-top: 20px;
-    border-top: 1px solid rgba(6, 147, 227, 0.2);
+    padding-top: 16px;
+    border-top: 1px solid rgba(6, 147, 227, 0.15);
+    margin-top: auto;
     flex-wrap: wrap;
 }
 
@@ -520,20 +538,20 @@ header .pic-avatar .socmed a:hover img {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
     color: #60d5ff;
     text-decoration: none;
-    padding: 10px 16px;
-    border: 1px solid rgba(96, 213, 255, 0.3);
-    border-radius: 8px;
+    padding: 9px 16px;
+    border: 1px solid rgba(96, 213, 255, 0.25);
+    border-radius: 6px;
     transition: all 0.3s ease;
     background: rgba(96, 213, 255, 0.08);
 }
 
 .action-primary:hover {
-    background: rgba(96, 213, 255, 0.15);
-    border-color: rgba(96, 213, 255, 0.5);
+    background: rgba(96, 213, 255, 0.12);
+    border-color: rgba(96, 213, 255, 0.4);
     color: #7fdbff;
 }
 
@@ -541,7 +559,7 @@ header .pic-avatar .socmed a:hover img {
     display: inline-flex;
     align-items: center;
     gap: 6px;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 600;
     color: #cbd5e1;
     text-decoration: none;
@@ -555,15 +573,15 @@ header .pic-avatar .socmed a:hover img {
 /* Responsive */
 @media only screen and (max-width: 1200px) {
     .project-card {
-        height: 300px;
+        min-height: 520px;
     }
 
-    .project-content {
-        padding: 28px;
+    .project-image {
+        height: 160px;
     }
 
     .project-title {
-        font-size: 24px;
+        font-size: 20px;
     }
 }
 
@@ -574,15 +592,34 @@ header .pic-avatar .socmed a:hover img {
     }
 
     .project-card {
-        height: 280px;
+        min-height: 500px;
+    }
+
+    .project-image {
+        height: 150px;
     }
 
     .project-content {
-        padding: 24px;
+        padding: 20px;
     }
 
     .project-title {
-        font-size: 22px;
+        font-size: 18px;
+    }
+    
+    .project-description {
+        font-size: 13px;
+        margin-bottom: 12px;
+    }
+    
+    .tech-label {
+        font-size: 10px;
+        margin-bottom: 6px;
+    }
+    
+    .tech-tag {
+        font-size: 10px;
+        padding: 5px 10px;
     }
 }
 
