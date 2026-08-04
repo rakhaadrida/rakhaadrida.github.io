@@ -390,7 +390,7 @@ header .pic-avatar .socmed a:hover img {
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 32px;
+    gap: 32px 0;
 }
 
 /* Project Card */
