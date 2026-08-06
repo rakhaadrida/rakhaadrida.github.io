@@ -312,8 +312,8 @@ header .pic-avatar .socmed a:hover img {
 }
 
 .portfolio-header {
-    background: linear-gradient(135deg, #0f172a 0%, #1a2954 50%, #162555 100%);
-    min-height: 300px;
+    background: linear-gradient(135deg, #0f172a 0%, #0f172a 50%, #162555 100%);
+    min-height: 200px;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -405,7 +405,7 @@ header .pic-avatar .socmed a:hover img {
     display: flex;
     flex-direction: column;
     height: 100%;
-    min-height: 550px;
+    min-height: 500px;
 }
 
 .project-card:hover {
@@ -419,7 +419,7 @@ header .pic-avatar .socmed a:hover img {
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 180px;
+    height: 280px;
     background: rgba(0, 0, 0, 0.3);
     flex-shrink: 0;
     aspect-ratio: 16 / 9;
@@ -428,6 +428,13 @@ header .pic-avatar .socmed a:hover img {
 .project-image img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project-image-top img {
+    width: 100%;
+    height: auto;
     object-fit: cover;
     transition: transform 0.3s ease;
 }
@@ -464,6 +471,24 @@ header .pic-avatar .socmed a:hover img {
     letter-spacing: 0.4px;
 }
 
+.project-type {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    background-color: rgba(34, 197, 94, 0.12);
+    color: #4ade80;
+    padding: 6px 12px;
+    border-radius: 12px;
+    border: 1px solid rgba(96, 213, 255, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+
+.project-type-personal {
+    background: rgba(168, 85, 247, 0.12);
+    color: #c084fc;
+}
+
 .project-title {
     font-family: "Lato", sans-serif;
     font-size: 22px;
@@ -492,7 +517,7 @@ header .pic-avatar .socmed a:hover img {
 }
 
 .tech-section {
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 }
 
 .tech-label {
@@ -530,7 +555,6 @@ header .pic-avatar .socmed a:hover img {
     align-items: center;
     padding-top: 16px;
     border-top: 1px solid rgba(6, 147, 227, 0.15);
-    margin-top: auto;
     flex-wrap: wrap;
 }
 
@@ -606,17 +630,17 @@ header .pic-avatar .socmed a:hover img {
     .project-title {
         font-size: 18px;
     }
-    
+
     .project-description {
         font-size: 13px;
         margin-bottom: 12px;
     }
-    
+
     .tech-label {
         font-size: 10px;
         margin-bottom: 6px;
     }
-    
+
     .tech-tag {
         font-size: 10px;
         padding: 5px 10px;
@@ -959,11 +983,11 @@ header .pic-avatar .socmed a:hover img {
 }
 
 /* Tech Stack Badges */
-.tech-stack {
+.tech-stack-experience {
     display: flex;
     gap: 8px;
     flex-wrap: wrap;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 }
 
 .tech-badge {
