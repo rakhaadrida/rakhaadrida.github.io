@@ -360,7 +360,7 @@ header .pic-avatar .socmed a:hover img {
 
 .portfolio-content {
     background: linear-gradient(135deg, #0f172a 0%, #1a2954 50%, #162555 100%);
-    padding: 80px 0;
+    padding: 70px 0;
     position: relative;
     overflow: hidden;
 }
@@ -387,10 +387,25 @@ header .pic-avatar .socmed a:hover img {
     z-index: 1;
 }
 
+.portfolio-content h1 {
+    font-family: "Lato", sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    color: #f8fafc;
+    letter-spacing: -0.3px;
+}
+
+.portfolio-content h4 {
+    font-size: 18px;
+    color: #94a3b8;
+    margin-bottom: 70px;
+}
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 32px;
+    margin-bottom: 30px;
 }
 
 /* Project Card */
@@ -910,7 +925,7 @@ header .pic-avatar .socmed a:hover img {
 .experience-content h1 {
     font-family: "Lato", sans-serif;
     font-size: 40px;
-    font-weight: bold;
+    font-weight: 800;
     color: #f8fafc;
     letter-spacing: -0.3px;
 }
@@ -934,6 +949,10 @@ header .pic-avatar .socmed a:hover img {
     margin-bottom: 0;
     padding-bottom: 26px;
     letter-spacing: -0.3px;
+}
+
+.section-title-skills {
+    padding-bottom: 20px;
 }
 
 .experience-title {
@@ -1152,7 +1171,7 @@ header .pic-avatar .socmed a:hover img {
 /* ===== EDUCATION SECTION ===== */
 
 .education-section {
-    padding: 80px 0;
+    padding: 70px 0;
     background: linear-gradient(135deg, #0f172a 0%, #1a2954 50%, #162555 100%);
     margin-top: 0;
     animation: fadeInUp 0.8s ease-out;
@@ -1184,10 +1203,10 @@ header .pic-avatar .socmed a:hover img {
 
 .education-title {
     font-family: "Lato", sans-serif;
-    font-size: 32px;
-    font-weight: 700;
+    font-size: 40px;
+    font-weight: 800;
     color: #f8fafc;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     text-align: center;
     letter-spacing: -0.3px;
 }
@@ -1200,6 +1219,7 @@ header .pic-avatar .socmed a:hover img {
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     backdrop-filter: blur(10px);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
 }
 
 .education-card:hover {
@@ -2307,7 +2327,7 @@ footer h4 {
 
 .skills-heading {
     max-width: 680px;
-    margin: 0 auto 44px;
+    margin: 0 auto 50px;
     text-align: center;
 }
 
@@ -2331,7 +2351,7 @@ footer h4 {
 
 .skills-section .section-subtitle {
     color: #94a3b8;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1;
     margin: 0;
 }
