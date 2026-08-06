@@ -907,8 +907,22 @@ header .pic-avatar .socmed a:hover img {
     z-index: 1;
 }
 
+.experience-content h1 {
+    font-family: "Lato", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f8fafc;
+    letter-spacing: -0.3px;
+}
+
+.experience-content h5 {
+    font-size: 18px;
+    color: #94a3b8;
+    margin-top: 10px;
+}
+
 .experience-section {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     animation: fadeInUp 0.8s ease-out;
 }
 
@@ -917,7 +931,7 @@ header .pic-avatar .socmed a:hover img {
     font-size: 24px;
     font-weight: 700;
     color: #f8fafc;
-    margin-bottom: 28px;
+    margin-bottom: 0;
     padding-bottom: 26px;
     letter-spacing: -0.3px;
 }
@@ -1173,7 +1187,7 @@ header .pic-avatar .socmed a:hover img {
     font-size: 32px;
     font-weight: 700;
     color: #f8fafc;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     text-align: center;
     letter-spacing: -0.3px;
 }
@@ -2263,7 +2277,7 @@ footer h4 {
 
 .skills-section {
     width: 100%;
-    padding: 96px 20px 110px;
+    padding: 80px 20px 90px;
     margin-top: 0;
     background: linear-gradient(135deg, #0f172a 0%, #1a2954 50%, #162555 100%);
     position: relative;
@@ -2278,7 +2292,9 @@ footer h4 {
         linear-gradient(90deg, rgba(6, 147, 227, 0.04) 1px, transparent 1px),
         linear-gradient(rgba(6, 147, 227, 0.04) 1px, transparent 1px);
     background-size: 60px 60px;
-    background-position: 0 0, 30px 30px;
+    background-position:
+        0 0,
+        30px 30px;
     pointer-events: none;
 }
 
@@ -2310,13 +2326,13 @@ footer h4 {
     font-family: "Lato", sans-serif;
     font-size: 40px;
     font-weight: 800;
-    margin-bottom: 10px;
+    margin-bottom: 4px;
 }
 
 .skills-section .section-subtitle {
     color: #94a3b8;
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1;
     margin: 0;
 }
 
@@ -2334,10 +2350,6 @@ footer h4 {
     padding: 24px;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     backdrop-filter: blur(10px);
-}
-
-.skill-group:last-child {
-    grid-column: 1 / -1;
 }
 
 .skill-group:hover {
@@ -2385,7 +2397,16 @@ footer h4 {
     color: #cbd5e1;
     font-size: 14px;
     font-weight: 600;
-    line-height: 1.4;
+    line-height: 1;
+}
+
+.skill-icon {
+    width: 18px !important;
+    height: 18px !important;
+    max-width: 18px !important;
+    max-height: 18px !important;
+    object-fit: contain;
+    margin-right: 8px;
 }
 
 .skill-badge {
