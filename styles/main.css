@@ -1711,7 +1711,7 @@ footer h4 {
 
 @media only screen and (max-width: 1199px) {
     header .pic-avatar .socmed {
-        margin-left: 10px;
+        margin-left: 85px;
         gap: 10px;
     }
     header .pic-avatar .socmed a {
@@ -1744,15 +1744,15 @@ footer h4 {
         font-size: 32px;
     }
     header .hero-headline {
-        font-size: 44px;
+        font-size: 36px;
     }
     header .hero-description {
-        font-size: 16px;
+        font-size: 14px;
     }
     header .btn-primary,
     header .btn-secondary {
-        font-size: 15px;
-        padding: 12px 28px;
+        font-size: 13px;
+        padding: 10px 24px;
     }
     header .pic-avatar {
         margin-top: 30px;
@@ -1760,7 +1760,7 @@ footer h4 {
         max-height: 370px;
     }
     header .pic-avatar .socmed {
-        margin-left: 15px;
+        margin-left: 40px;
         gap: 10px;
     }
     header .pic-avatar .socmed a {
