@@ -1444,6 +1444,18 @@ header .pic-avatar .socmed a:hover img {
     background-color: #041e44;
 }
 
+.contact-content h1 {
+    margin-top: 60px;
+    font-family: "Lato", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.contact-content h4 {
+    font-size: 20px;
+}
+
 .contact-content .contact-item {
     margin-bottom: -30px;
 }
@@ -2543,8 +2555,26 @@ footer h4 {
 }
 
 .contact-content {
-    padding: 18px 0 76px;
+    padding: 80px 0 70px;
     text-align: center;
+}
+
+.contact-content h1 {
+    margin: 16px auto 24px;
+    color: #f8fafc;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    font-weight: 800;
+}
+
+.contact-content h4 {
+    max-width: 560px;
+    margin: 0 auto;
+    color: #94a3b8;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.7;
 }
 
 .contact-socials {
@@ -2559,10 +2589,12 @@ footer h4 {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    color: #cbd5e1;
-    font-size: 14px;
+    color: #b0c4de;
+    font-weight: 500;
     text-decoration: none;
-    transition: color 0.3s ease, transform 0.3s ease;
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
 }
 
 .contact-socials a:hover {
@@ -2580,7 +2612,7 @@ footer h4 {
 .contact-actions {
     display: flex;
     justify-content: center;
-    margin-top: 22px;
+    margin-top: 28px;
 }
 
 .contact-button {
@@ -2588,19 +2620,22 @@ footer h4 {
     align-items: center;
     gap: 10px;
     padding: 13px 24px;
-    border: 1px solid rgba(96, 213, 255, 0.35);
+    border: 2px solid #0693e3;
     border-radius: 8px;
-    color: #cbd5e1;
+    color: #ffffff;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 600;
     text-decoration: none;
-    transition: all 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 15px rgba(6, 147, 227, 0.3);
+    cursor: pointer;
 }
 
 .contact-button:hover {
     border-color: #60d5ff;
     color: #f8fafc;
     transform: translateY(-2px);
+    text-decoration: none;
 }
 
 .contact-button-primary {
@@ -2613,13 +2648,30 @@ footer h4 {
     background-color: #0580c8;
     border-color: #0580c8;
     color: #ffffff;
+    box-shadow: 0 8px 25px rgba(6, 147, 227, 0.4);
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+
+.contact-button-primary:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(6, 147, 227, 0.2);
+}
+
+.contact-button-primary .btn-contact-icon {
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+
+.contact-button-primary:hover .btn-contact-icon {
+    transform: translateX(3px);
 }
 
 .contact-footer-note {
-    margin: 46px 0 0;
+    margin: 40px 0 0;
     color: #94a3b8;
-    font-size: 12px;
     letter-spacing: 0.2px;
+    font-weight: 500;
 }
 
 .contact-footer {
