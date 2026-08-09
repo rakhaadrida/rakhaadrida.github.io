@@ -2916,6 +2916,72 @@ footer {
         overflow-x: hidden;
     }
 
+    header > .container > .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header > .container > .row > [class*="col-"] {
+        flex: 0 0 auto;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    header > .container > .row > [class*="col-"]:first-child {
+        order: 1;
+    }
+
+    header > .container > .row > [class*="col-"]:last-child {
+        order: 2;
+    }
+
+    header .title-text,
+    header .hero-cta {
+        width: 100%;
+        text-align: center;
+    }
+
+    header .hero-greeting {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    header .hero-headline,
+    header .hero-description {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 34rem;
+    }
+
+    header .hero-cta {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    header .pic-avatar {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: min(100%, 270px);
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    header .pic-avatar > img {
+        display: block;
+        float: none !important;
+        width: 100%;
+        height: auto;
+    }
+
+    header .pic-avatar .socmed {
+        justify-content: center;
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
     header {
         min-height: 0;
         padding: 42px 20px 48px;
