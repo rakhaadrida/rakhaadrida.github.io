@@ -4,7 +4,7 @@ const projects = [
         title: "PersonalGrowth API",
         category: "Backend Engineering / Full-Time",
         type: "Vodea",
-        year: "2023",
+        year: "2022",
         image: "images/porto/pg-thumbnail.png",
         thumbnail: "images/porto/pg-thumbnail.png",
         summary:
@@ -113,47 +113,68 @@ const projects = [
     {
         key: "infopond",
         title: "Infopond",
-        category: "Full stack / Discovery",
-        type: "Client project",
+        category: "Full-Stack Engineering / Full-Time",
+        type: "Vodea",
         year: "2023",
-        image: "images/porto/infopond6.png",
+        image: "images/porto/infopond-thumbnail.png",
         thumbnail: "images/porto/infopond-thumbnail.png",
         summary:
-            "A location-led discovery platform that helps people find useful places and information around them.",
-        briefHeading: "Turning place into context",
-        brief: "Infopond combines location, search, and structured business information into a more useful local discovery experience.",
+            "A full-stack tourism platform combining location discovery, interactive maps, and content management into a single experience.",
+        briefHeading: "Discover more, right where you are.",
+        brief: "Infopond was built as a location discovery platform for exploring tourism destinations and location-based information. The platform combines interactive maps, nearby destination discovery, multilingual content, and a content management system to make location-based information easier to discover and manage.",
         live: "https://infoma.au/",
         features: [
             [
-                "Search with context",
-                "Structured listings around the information people actually need.",
+                "Location Discovery",
+                "Users needed an intuitive way to search, discover, and navigate nearby tourism destinations through an interactive map with accurate distance information.",
             ],
             [
-                "Location intelligence",
-                "Integrated geolocation and map-oriented data flows.",
+                "Content & Multilingual Experience",
+                "Tourism information needed to be structured, searchable, and available across multiple languages without compromising the user experience.",
             ],
             [
-                "A useful back office",
-                "Made content management practical for the team behind the listings.",
+                "Content Management",
+                "Administrators needed a backoffice to manage destinations, categories, media, and other platform content efficiently.",
+            ],
+            [
+                "Partner & Redemption Flows",
+                "The platform needed to support partner-related codes and redemption flows as part of the overall location-based experience.",
             ],
         ],
         tech: [
-            ["Backend", "Laravel"],
-            ["Data", "MySQL"],
-            ["Interface", "Bootstrap + JavaScript"],
-            ["Integrations", "Google API + geolocation"],
+            ["Backend", "Laravel + Google Maps API"],
+            ["Database", "MySQL"],
+            ["Frontend", "HTML + CSS + JavaScript + jQuery"],
+            [
+                "Location & Discovery",
+                "Location Search + Distance Calculation + Interactive Maps",
+            ],
+            [
+                "Content & Localization",
+                "Multilingual Content | Search | Media | Dynamic Content",
+            ],
+            [
+                "Backoffice & CMS",
+                "Destination Management + Content Management | Partner Management | Redeem Codes",
+            ],
         ],
         gallery: [
-            ["images/porto/infopond6.png", "Discovery interface"],
             ["images/porto/infopond-thumbnail.png", "Platform overview"],
+            ["images/infopond/infopond3.png", "Discovery interface"],
+            ["images/infopond/infopond2.png", "Multilingual Feature"],
+            [
+                "images/infopond/infopond6.png",
+                "Location Search & Distance Calculation",
+            ],
         ],
         challengeHeading: "Information is only useful when it is findable",
         challenge:
             "Local information can be dense and inconsistent. The experience needed to turn that raw material into fast, relevant answers.",
         solutionHeading: "A sharper signal",
         solution:
-            "I connected structured content with location-aware flows, keeping the interface focused on what someone can do next.",
-        outcome: "A more useful way to navigate local information.",
+            "The challenge was to bring together geographic data, tourism content, multilingual information, and user interactions into a single location-driven experience. Users needed to quickly discover relevant destinations based on location, while administrators needed a flexible way to manage the underlying content through the backoffice.\n\n This required keeping the location services, backend data, frontend experience, and CMS closely connected while supporting additional flows such as partner codes and redemption functionality.",
+        outcome:
+            "Delivered a scalable full-stack platform covering the backend, frontend, and backoffice, with location discovery powered by Google Maps and distance calculation. The resulting system provided a unified experience for discovering tourism destinations while giving administrators the tools to manage multilingual content and platform operations efficiently.",
     },
     {
         key: "cpl",
