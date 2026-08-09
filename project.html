@@ -1,59 +1,102 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Project case study by Rakha Adrida Bagaspati." />
-    <title>Project Case Study — Rakha Adrida</title>
-    <link rel="stylesheet" href="libraries/font-awesome/css/font-awesome.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Muli:wght@300;400;700;800&display=swap" />
-    <link rel="stylesheet" href="styles/project.css" />
-  </head>
-  <body>
-    <header class="case-header">
-      <nav class="case-nav" aria-label="Case study navigation">
-        <a class="back-link" href="index.html#projects"><span aria-hidden="true">←</span> Back to projects</a>
-        <span class="nav-mark">RA / CASE STUDIES</span>
-      </nav>
-      <div class="case-hero">
-        <div class="eyebrow" id="project-category"></div>
-        <h1 id="project-title"></h1>
-        <p class="hero-summary" id="project-summary"></p>
-        <div class="hero-meta" id="project-meta"></div>
-      </div>
-      <div class="hero-image-wrap"><img id="project-hero-image" alt="" /></div>
-    </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Project case study by Rakha Adrida Bagaspati."
+        />
+        <title>Project Case Study — Rakha Adrida</title>
+        <link
+            rel="stylesheet"
+            href="libraries/font-awesome/css/font-awesome.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Muli:wght@300;400;700;800&display=swap"
+        />
+        <link rel="stylesheet" href="styles/project.css" />
+    </head>
+    <body>
+        <header class="case-header">
+            <nav class="case-nav" aria-label="Case study navigation">
+                <a class="back-link" href="index.html#projects"
+                    ><span aria-hidden="true">←</span> Back to Projects</a
+                >
+                <span class="nav-mark">RA / Project Detail</span>
+            </nav>
+            <div class="case-hero">
+                <div class="eyebrow" id="project-category"></div>
+                <h1 id="project-title"></h1>
+                <p class="hero-summary" id="project-summary"></p>
+                <div class="hero-meta" id="project-meta"></div>
+            </div>
+            <div class="hero-image-wrap">
+                <img id="project-hero-image" alt="" />
+            </div>
+        </header>
 
-    <main class="case-main">
-      <section class="intro-grid">
-        <div><p class="section-kicker">The brief</p><h2 id="project-brief-heading"></h2></div>
-        <div><p class="lead-copy" id="project-brief"></p><div class="action-row" id="project-actions"></div></div>
-      </section>
+        <main class="case-main">
+            <section class="intro-grid">
+                <div>
+                    <p class="section-kicker">The brief</p>
+                    <h2 id="project-brief-heading"></h2>
+                </div>
+                <div>
+                    <p class="lead-copy" id="project-brief"></p>
+                    <div class="action-row" id="project-actions"></div>
+                </div>
+            </section>
 
-      <section class="content-section split-section">
-        <div><p class="section-kicker">01 / Focus</p><h2>What needed to work</h2></div>
-        <div class="feature-list" id="project-features"></div>
-      </section>
+            <section class="content-section-focus split-section">
+                <div>
+                    <p class="section-kicker">01 / Focus</p>
+                    <h2>What needed to work</h2>
+                </div>
+                <div class="feature-list" id="project-features"></div>
+            </section>
 
-      <section class="content-section tech-section-case">
-        <div><p class="section-kicker">02 / Build</p><h2>Technical overview</h2></div>
-        <div class="tech-grid" id="project-tech"></div>
-      </section>
+            <section class="content-section tech-section-case">
+                <div>
+                    <p class="section-kicker">02 / Build</p>
+                    <h2>Technical overview</h2>
+                </div>
+                <div class="tech-grid" id="project-tech"></div>
+            </section>
 
-      <section class="gallery-section">
-        <div class="section-heading"><div><p class="section-kicker">03 / Interface</p><h2>Inside the product</h2></div><p id="gallery-note"></p></div>
-        <div class="gallery-grid" id="project-gallery"></div>
-      </section>
+            <section class="gallery-section">
+                <div class="section-heading">
+                    <div>
+                        <p class="section-kicker">03 / Interface</p>
+                        <h2>Inside the product</h2>
+                    </div>
+                    <p id="gallery-note"></p>
+                </div>
+                <div class="gallery-grid" id="project-gallery"></div>
+            </section>
 
-      <section class="content-section challenge-grid">
-        <article><p class="section-kicker">The challenge</p><h2 id="project-challenge-heading"></h2><p id="project-challenge"></p></article>
-        <article class="solution-card"><p class="section-kicker">The solution</p><h2 id="project-solution-heading"></h2><p id="project-solution"></p></article>
-      </section>
+            <section class="content-section challenge-grid">
+                <article>
+                    <p class="section-kicker">The challenge</p>
+                    <h2 id="project-challenge-heading"></h2>
+                </article>
+                <article class="solution-card">
+                    <p id="project-solution"></p>
+                </article>
+            </section>
 
-      <section class="outcome-section"><p class="section-kicker">The outcome</p><h2 id="project-outcome"></h2></section>
-    </main>
+            <section class="outcome-section">
+                <p class="section-kicker">The outcome</p>
+                <h2 id="project-outcome"></h2>
+            </section>
+        </main>
 
-    <footer class="case-footer"><a id="previous-project" href="#"></a><a class="footer-home" href="index.html#projects">All projects</a><a id="next-project" href="#"></a></footer>
-    <script src="scripts/project.js"></script>
-  </body>
+        <footer class="case-footer">
+            <a id="previous-project" href="#"></a
+            ><a class="footer-home" href="index.html#projects">All projects</a
+            ><a id="next-project" href="#"></a>
+        </footer>
+        <script src="scripts/project.js"></script>
+    </body>
 </html>
