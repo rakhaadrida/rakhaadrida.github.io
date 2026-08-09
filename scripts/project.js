@@ -4,7 +4,7 @@ const projects = [
         title: "PersonalGrowth API",
         category: "Backend Engineering / Full-Time",
         type: "Vodea",
-        year: "2024",
+        year: "2023",
         image: "images/porto/pg-thumbnail.png",
         thumbnail: "images/porto/pg-thumbnail.png",
         summary:
@@ -53,48 +53,62 @@ const projects = [
     {
         key: "jakartavet",
         title: "Jakarta Vet",
-        category: "Full stack / Healthcare",
-        type: "Client project",
-        year: "2023",
-        image: "images/porto/jve1.png",
+        category: "Full-Stack Engineering / Full-Time",
+        type: "Vodea",
+        year: "2021",
+        image: "images/porto/jvet-thumbnail.png",
         thumbnail: "images/porto/jvet-thumbnail.png",
         summary:
-            "A booking and operations platform for a veterinary clinic, designed around trust, clarity, and fast coordination.",
+            "A veterinary care platform built to connect pet owners with JakartaVet's clinics, services, and real-time queueing experience.",
         briefHeading: "A better way to care",
-        brief: "Jakarta Vet needed a digital experience that could serve pet owners while giving clinic staff a more reliable operational workflow.",
+        brief: "JakartaVet needed more than a website to present its veterinary services. The platform was designed to give pet owners an easier way to discover clinic information, explore available services, and access veterinary care through an online queueing system. Behind the customer-facing experience, a dedicated backoffice helped the clinic team manage content and operate daily queues.",
         live: "https://jakartavet.com/",
         features: [
             [
-                "Appointment flow",
-                "Made booking and service selection easier for pet owners.",
+                "Customer experience",
+                "Make clinic locations, services, doctors, and essential information easy for pet owners to discover and access through a clear, user-friendly website.",
             ],
             [
-                "Operational clarity",
-                "Connected the public experience to internal scheduling and patient records.",
+                "Online queueing",
+                "Provide a seamless queueing experience for customers while keeping queue status synchronized with the clinic's ongoing operations.",
             ],
             [
-                "Human-centered details",
-                "Used clear states and notifications to reduce uncertainty around visits.",
+                "Clinic operations",
+                "Give administrators a centralized backoffice to manage website content and operate daily queues, including calling and navigating between queue numbers.",
+            ],
+            [
+                "Multi-branch platform",
+                "Support JakartaVet's three clinic locations within a single platform while keeping the experience consistent across branches.",
             ],
         ],
         tech: [
-            ["Backend", "Laravel"],
-            ["Data", "MySQL"],
-            ["Interface", "Bootstrap + jQuery"],
-            ["Operations", "Email notifications"],
+            ["Backend", "Laravel + PHP + MVC Architecture"],
+            ["Database", "MySQL"],
+            ["Frontend", "HTML + CSS + JavaScript + jQuery"],
+            ["Real-time", "Pusher + Real-time Queue Updates"],
+            [
+                "Customer Platform",
+                "Clinic & Service Information | Online Queueing | Queue Status",
+            ],
+            [
+                "Backoffice",
+                "Content Management | Queue Management | Queue Controls",
+            ],
         ],
         gallery: [
-            ["images/porto/jve1.png", "Clinic experience"],
             ["images/porto/jvet-thumbnail.png", "Service overview"],
+            ["images/jve/jve1.png", "Clinic experience"],
+            ["images/jve/jve3.png", "Real Time Queue"],
+            ["images/jve/jve5.png", "Email Notification"],
         ],
         challengeHeading: "Care is time-sensitive",
         challenge:
             "Clinic teams need to move quickly, but booking systems often make simple actions feel administrative and slow.",
         solutionHeading: "Less admin, more care",
         solution:
-            "The system was organized around the moments that matter most: selecting a service, booking a slot, and keeping everyone informed.",
+            "The main challenge was connecting a customer-facing veterinary website with the clinic's day-to-day queue operations. The platform needed to serve two very different users: pet owners looking for a simple way to access veterinary services, and clinic staff who needed a practical interface to manage content and operate the queue.\n\n The queueing workflow added another layer of complexity. Queue numbers had to be managed from the backoffice while keeping the customer-facing experience synchronized with the clinic's current queue status. This required the website, backoffice, and real-time communication layer to work together as one system.",
         outcome:
-            "A smoother path from first search to a confirmed appointment.",
+            "The result was a complete digital platform that brought JakartaVet's customer experience and clinic operations into a single system. Pet owners could discover services, access clinic information, and interact with the online queueing system, while clinic staff could manage website content and operate daily queues through the backoffice.\n\n The platform has continued to support JakartaVet's operations across its three clinic locations since its initial development in 2021, making it more than a marketing website—it became part of the clinic's day-to-day digital workflow.",
     },
     {
         key: "infopond",
