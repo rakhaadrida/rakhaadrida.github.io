@@ -177,49 +177,69 @@ const projects = [
             "Delivered a scalable full-stack platform covering the backend, frontend, and backoffice, with location discovery powered by Google Maps and distance calculation. The resulting system provided a unified experience for discovering tourism destinations while giving administrators the tools to manage multilingual content and platform operations efficiently.",
     },
     {
-        key: "cpl",
-        title: "Cahaya Prima Lestari",
-        category: "Business systems / ERP",
-        type: "Client project",
+        key: "laravelpos",
+        title: "Laravel POS System",
+        category: "Full Stack Development / Freelance",
+        type: "Cahaya Prima Lestari",
         year: "2021",
-        image: "images/porto/cpl.png",
+        image: "images/porto/cpl-thumbnail.png",
         thumbnail: "images/porto/cpl-thumbnail.png",
         summary:
-            "A business system replacement that brought manufacturing operations into one more dependable workflow.",
+            "A custom Laravel-based POS and business management system rebuilt to improve operational control, inventory accuracy, and financial reporting.",
         briefHeading: "Replacing the fragile parts",
-        brief: "CPL needed a modern operational system for stock, purchasing, sales, approvals, and reporting—without losing the practical knowledge in the legacy process.",
+        brief: "A complete POS and business management system rebuilt from an existing platform using Laravel and MySQL. I was responsible for developing the full system, from backend architecture and business logic to the admin dashboard, while also migrating existing data into the new platform. The system was designed to address operational issues across inventory, transactions, approvals, and financial reporting, and was successfully implemented for two different clients across different years.",
         features: [
             [
-                "Reliable stock",
-                "Created real-time inventory tracking to reduce monthly discrepancies.",
+                "System Modernization",
+                "Rebuild the existing platform and migrate historical data into a more structured Laravel application.",
             ],
             [
-                "Clear approvals",
-                "Added guardrails around sensitive transactions and business decisions.",
+                "Inventory Accuracy",
+                "Replace unreliable monthly stock tracking with real-time stock card functionality for clearer inventory movement.",
             ],
             [
-                "Useful reporting",
-                "Supported exports and operational views for day-to-day decisions.",
+                "Controlled Transactions",
+                "Introduce role-based access and approval workflows to prevent unauthorized or unexplained transaction changes.",
+            ],
+            [
+                "Financial Accuracy",
+                "Connect operational data with AR/AP and FIFO-based financial reporting to calculate COGS and support more accurate pricing decisions.",
             ],
         ],
         tech: [
-            ["Backend", "Laravel"],
-            ["Data", "MySQL"],
-            ["Interface", "Bootstrap + JavaScript"],
-            ["Output", "Excel + PDF export"],
+            ["Backend & Database", "Laravel + MySQL"],
+            ["Admin Dashboard", "HTML + CSS + Bootstrap + JavaScript + jQuery"],
+            [
+                "System Migration",
+                "Existing Data Migration + Database Restructuring",
+            ],
+            [
+                "Access & Workflow",
+                "7 User Roles + Role-Based Access + Approval Workflow",
+            ],
+            [
+                "Inventory Management",
+                "Real-Time Stock Card + Stock Movement Tracking",
+            ],
+            [
+                "Reporting & Finance",
+                "AR/AP Integration + FIFO Financial Reporting + Excel/PDF Export",
+            ],
         ],
         gallery: [
-            ["images/porto/cpl.png", "Operations system"],
             ["images/porto/cpl-thumbnail.png", "System overview"],
+            ["images/CPL/dashboard.png", "Dashboard"],
+            ["images/CPL/AR.png", "Account Receivable page"],
+            ["images/CPL/LapKeu.png", "FIFO Financial Reporting"],
         ],
-        challengeHeading: "The cost of legacy",
+        challengeHeading: "The limits of legacy",
         challenge:
             "The old system made routine work fragile: data drifted, reports took too long, and critical knowledge was trapped in manual steps.",
         solutionHeading: "A system built around reality",
         solution:
-            "The replacement preserved the workflows people understood while adding stronger data relationships, validation, and reporting.",
+            "The main challenge was rebuilding an existing system while preserving its historical data and addressing the operational problems that had accumulated over time. Inventory discrepancies made monthly stock tracking difficult, while transaction changes without sufficient control created uncertainty around financial records.\n\n The new system needed to establish clearer workflows, real-time stock visibility, and more reliable financial calculations without disrupting the underlying business operations.",
         outcome:
-            "More reliable operations, from stock movement to management reporting.",
+            "A complete Laravel-based POS and business management system was delivered, covering the backend, database, and admin dashboard. Existing business data was migrated into the new platform, while real-time stock cards, approval workflows, and FIFO-based financial reporting addressed key operational and financial issues.\n\n The system was successfully implemented and used by two different clients across different years, providing more reliable transaction control, clearer inventory visibility, and more accurate financial data for COGS calculation and pricing decisions.",
     },
     {
         key: "nextplace",
