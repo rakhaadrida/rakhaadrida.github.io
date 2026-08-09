@@ -302,48 +302,57 @@ const projects = [
     {
         key: "ankastory",
         title: "Anka Story",
-        category: "Interactive experience",
-        type: "Personal project",
+        category: "Frontend Development / Personal",
+        type: "Anka Story",
         year: "2020",
-        image: "images/porto/ankastory.jpg",
+        image: "images/porto/ankastory@2x.jpg",
         thumbnail: "images/porto/ankastory@2x.jpg",
         summary:
-            "A digital love story made from personal narratives, small surprises, and the memories worth keeping.",
-        briefHeading: "Making a memory tangible",
-        brief: "Anka Story is an interactive storytelling website built to turn personal history into something immersive, browsable, and lasting.",
+            "A personal interactive story built to turn a relationship into a digital anniversary experience filled with memories, milestones, and moments.",
+        briefHeading: "A story worth experiencing",
+        brief: "An interactive anniversary website created as a personal project to celebrate a relationship through stories, milestones, trivia, photos, and videos. I designed and developed the entire experience from the ground up, turning personal memories into a visual journey that could be explored together.",
         live: "https://ankastory.github.io/",
         features: [
             [
                 "A story, not a scroll",
-                "Organized memories into chapters, timeline moments, trivia, and galleries.",
+                "Present personal stories and memories as an engaging digital journey",
+            ],
+            [
+                "Timeline of memories",
+                "Visualize the relationship's milestones through an interactive love line",
+            ],
+            [
+                "Interactions that matter",
+                "Make trivia and other sections feel playful rather than static.",
             ],
             [
                 "Personal by design",
                 "Used custom copy, images, and videos to make the experience feel singular.",
             ],
-            [
-                "Simple technology",
-                "Kept the stack lightweight so the story remained the main character.",
-            ],
         ],
         tech: [
-            ["Structure", "HTML"],
-            ["Style", "CSS + Bootstrap"],
-            ["Behavior", "JavaScript"],
-            ["Media", "Image + video gallery"],
+            ["Frontend", "HTML + CSS + Bootstrap + JavaScript"],
+            [
+                "Experience",
+                "Interactive Storytelling + Love Line Timeline + Trivia",
+            ],
+            ["Design", "Responsive Layout | Animations | Interactive UI"],
+            ["Media", "Photo Gallery + Video"],
         ],
         gallery: [
-            ["images/porto/ankastory.jpg", "The story experience"],
-            ["images/porto/ankastory@2x.jpg", "A personal archive"],
+            ["images/porto/ankastory@2x.jpg", "The story experience"],
+            ["images/ankastory/2@2x.jpg", "Remembering milestones"],
+            ["images/ankastory/4@2x.jpg", "Loveline timeline"],
+            ["images/ankastory/5@2x.jpg", "Trivia and interactions"],
         ],
-        challengeHeading: "How do you design for feeling?",
+        challengeHeading: "More than just a website",
         challenge:
             "A personal story cannot be reduced to a list of features. It needed pacing, moments of discovery, and enough room for the material to breathe.",
         solutionHeading: "A quiet interactive archive",
         solution:
-            "The experience uses familiar web patterns as a frame for personal content, letting chapters, images, and small interactions carry the emotion.",
+            "The challenge was to turn something deeply personal into an experience that felt engaging, emotional, and visually cohesive. Instead of presenting memories as a collection of static content, I had to structure stories, milestones, interactive elements, and media into a journey that felt natural to explore.",
         outcome:
-            "A private story transformed into a digital experience meant to be revisited.",
+            "Anka Story became a personalized digital anniversary experience that brought our story, memories, and milestones together in one interactive space. Beyond being a website, it became a digital keepsake that captured the journey of our relationship in a way that could be revisited and shared.",
     },
 ];
 
