@@ -2908,3 +2908,128 @@ footer {
         justify-content: center;
     }
 }
+
+/* Responsive layout overrides: keep mobile content in normal document flow. */
+@media only screen and (max-width: 767px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    header {
+        min-height: 0;
+        padding: 42px 20px 48px;
+    }
+
+    header .title-text {
+        margin-top: 0;
+        text-align: center;
+    }
+
+    header .hero-cta {
+        align-items: stretch;
+        flex-direction: column;
+        width: min(100%, 280px);
+        margin: 22px auto 0;
+    }
+
+    header .btn-primary,
+    header .btn-secondary,
+    header .btn-cv,
+    header .btn-more {
+        width: 100%;
+        max-width: none;
+        margin: 0 !important;
+        text-align: center;
+    }
+
+    header .pic-avatar {
+        display: block;
+        margin: 34px auto 0;
+        max-width: min(220px, 72vw);
+        max-height: none;
+    }
+
+    header .pic-avatar .socmed {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin: 16px 0 0;
+    }
+
+    .portfolio-header hr {
+        width: min(100%, 295px);
+    }
+
+    .portfolio-content,
+    .resume-content,
+    .contact-content,
+    .skills-section {
+        overflow-x: hidden;
+    }
+
+    .skill .skill-content [class*="skill-value-"] {
+        margin-right: 0;
+    }
+
+    .skill .skill-content .skill-row,
+    .skill .skill-content .skill-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+    }
+
+    .skill .skill-content .skill-value,
+    .skill .skill-content [class*="skill-value-"] {
+        flex-shrink: 0;
+    }
+
+    .resume-content .list-group-item {
+        padding-right: 16px;
+        overflow-wrap: anywhere;
+    }
+
+    .contact-content .contact-item {
+        margin-bottom: 0;
+    }
+
+    .contact-content .contact-item img {
+        margin-top: 28px;
+    }
+
+    .footer-content {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    header {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+
+    header .hero-name,
+    header .hero-headline {
+        overflow-wrap: anywhere;
+    }
+
+    .skills-grid {
+        gap: 14px;
+    }
+
+    .skill-group {
+        padding: 18px;
+    }
+
+    .skill-row {
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .contact-socials {
+        gap: 16px;
+        font-size: 14px;
+    }
+}
