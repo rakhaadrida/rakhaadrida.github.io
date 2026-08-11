@@ -608,6 +608,7 @@ header .pic-avatar .socmed a:hover img {
 
 .action-secondary:hover {
     color: #60d5ff;
+    text-decoration: none;
 }
 
 /* Responsive */
