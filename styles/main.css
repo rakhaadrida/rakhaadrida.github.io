@@ -592,6 +592,7 @@ header .pic-avatar .socmed a:hover img {
     background: rgba(96, 213, 255, 0.12);
     border-color: rgba(96, 213, 255, 0.4);
     color: #7fdbff;
+    text-decoration: none;
 }
 
 .action-secondary {
