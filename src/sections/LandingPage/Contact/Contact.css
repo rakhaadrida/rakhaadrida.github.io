@@ -1,0 +1,238 @@
+.contact-header,
+.contact-content,
+.contact-footer {
+    background: linear-gradient(135deg, #0f172a 0%, #1a2954 50%, #162555 100%);
+}
+
+.contact-header {
+    padding: 86px 0 24px;
+}
+
+.contact-header h1 {
+    margin: 12px auto 16px;
+    color: #f8fafc;
+    font-size: 42px;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+}
+
+.contact-header h4 {
+    max-width: 560px;
+    margin: 0 auto;
+    color: #cbd5e1;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+.contact-eyebrow,
+.contact-label {
+    color: #60d5ff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.contact-content {
+    padding: 80px 0 70px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-content::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(90deg, rgba(6, 147, 227, 0.04) 1px, transparent 1px),
+        linear-gradient(rgba(6, 147, 227, 0.04) 1px, transparent 1px);
+    background-size: 60px 60px;
+    background-position:
+        0 0,
+        30px 30px;
+    pointer-events: none;
+}
+
+.contact-content h1 {
+    font-family: "Lato", sans-serif;
+    margin: 16px auto 24px;
+    color: #f8fafc;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    font-weight: 800;
+}
+
+.contact-content h4 {
+    max-width: 560px;
+    margin: 0 auto;
+    color: #94a3b8;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+.contact-socials {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 28px;
+}
+
+.contact-socials a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #b0c4de;
+    font-weight: 400;
+    text-decoration: none;
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.contact-socials a:hover {
+    color: #60d5ff;
+    transform: translateY(-2px);
+}
+
+.contact-socials img,
+.footer-socials img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.contact-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 28px;
+}
+
+.contact-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 24px;
+    border: 2px solid #0693e3;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 15px rgba(6, 147, 227, 0.3);
+    cursor: pointer;
+}
+
+.contact-button:hover {
+    border-color: #60d5ff;
+    color: #f8fafc;
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+
+.contact-button-primary {
+    background-color: #0693e3;
+    border-color: #0693e3;
+    color: #ffffff;
+}
+
+.contact-button-primary:hover {
+    background-color: #0580c8;
+    border-color: #0580c8;
+    color: #ffffff;
+    box-shadow: 0 8px 25px rgba(6, 147, 227, 0.4);
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+
+.contact-button-primary:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(6, 147, 227, 0.2);
+}
+
+.contact-button-primary .btn-contact-icon {
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+
+.contact-button-primary:hover .btn-contact-icon {
+    transform: translateX(3px);
+}
+
+.contact-footer-note {
+    margin: 40px 0 0;
+    color: #94a3b8;
+    letter-spacing: 0.2px;
+    font-weight: 400;
+}
+
+.contact-footer-note .separator {
+    margin-left: 4.5px;
+}
+
+.contact-footer {
+    height: 0;
+}
+
+@media only screen and (max-width: 767px) {
+    .contact-header {
+        padding-top: 64px;
+    }
+
+    .contact-header h1 {
+        font-size: 32px;
+    }
+
+    .contact-header h4 {
+        font-size: 15px;
+    }
+
+    .contact-content {
+        padding-bottom: 64px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .contact-header h1 {
+        font-size: 28px;
+    }
+
+    .contact-actions {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .contact-button {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .contact-content {
+        overflow-x: hidden;
+    }
+    .contact-content .contact-item {
+        margin-bottom: 0;
+    }
+
+    .contact-content .contact-item img {
+        margin-top: 28px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .contact-socials {
+        gap: 16px;
+        font-size: 14px;
+    }
+}

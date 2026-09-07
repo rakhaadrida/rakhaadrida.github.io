@@ -4,6 +4,7 @@ import Experience from "../sections/LandingPage/Experience/Experience";
 import Skill from "../sections/LandingPage/Skill/Skill";
 import About from "../sections/LandingPage/About/About";
 import Education from "../sections/LandingPage/Education/Education";
+import Contact from "../sections/LandingPage/Contact/Contact";
 
 const LandingPage = () => {
     return (
@@ -14,6 +15,7 @@ const LandingPage = () => {
             <Skill />
             <About />
             <Education />
+            <Contact />
         </>
     );
 };
