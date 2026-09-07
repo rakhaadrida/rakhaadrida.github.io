@@ -5,6 +5,7 @@ import Skill from "../sections/LandingPage/Skill/Skill";
 import About from "../sections/LandingPage/About/About";
 import Education from "../sections/LandingPage/Education/Education";
 import Contact from "../sections/LandingPage/Contact/Contact";
+import Footer from "../sections/LandingPage/Footer/Footer";
 
 const LandingPage = () => {
     return (
@@ -16,6 +17,7 @@ const LandingPage = () => {
             <About />
             <Education />
             <Contact />
+            <Footer />
         </>
     );
 };
