@@ -1,0 +1,121 @@
+.skill-group {
+    background: rgba(20, 30, 50, 0.62);
+    border: 1px solid rgba(6, 147, 227, 0.25);
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    padding: 24px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(10px);
+}
+
+.skill-group:hover {
+    background: rgba(20, 40, 70, 0.8);
+    border-color: rgba(6, 147, 227, 0.5);
+    box-shadow: 0 12px 32px rgba(6, 147, 227, 0.2);
+    transform: translateY(-4px);
+}
+
+.skill-group-heading {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 22px;
+}
+
+.skill-group-index {
+    color: #60d5ff;
+    font-family: "Lato", sans-serif;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+.skill-group h3 {
+    color: #f0f4f8;
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.skill-badges {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.skill-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    color: #cbd5e1;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.skill-icon {
+    width: 18px !important;
+    height: 18px !important;
+    max-width: 18px !important;
+    max-height: 18px !important;
+    object-fit: contain;
+    margin-right: 8px;
+}
+
+.skill-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    min-height: 30px;
+    padding: 5px 10px;
+    border: 1px solid rgba(96, 213, 255, 0.24);
+    border-radius: 8px;
+    background: rgba(96, 213, 255, 0.08);
+    color: #60d5ff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    line-height: 1.2;
+    transition: all 0.25s ease;
+}
+
+.skill-badge:hover {
+    background: rgba(96, 213, 255, 0.14);
+    border-color: rgba(96, 213, 255, 0.5);
+    color: #f8fafc;
+    transform: translateY(-2px);
+}
+
+.skill-badge img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.skill-badge-text {
+    color: #60d5ff;
+}
+
+@media only screen and (max-width: 768px) {
+    .skill-group:last-child {
+        grid-column: auto;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .skill-group {
+        padding: 20px;
+    }
+
+    .skill-group h3 {
+        font-size: 16px;
+    }
+
+    .skill-badge {
+        font-size: 12px;
+    }
+}
