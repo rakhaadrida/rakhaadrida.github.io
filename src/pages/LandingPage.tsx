@@ -3,6 +3,7 @@ import Project from "../sections/LandingPage/Project/Project";
 import Experience from "../sections/LandingPage/Experience/Experience";
 import Skill from "../sections/LandingPage/Skill/Skill";
 import About from "../sections/LandingPage/About/About";
+import Education from "../sections/LandingPage/Education/Education";
 
 const LandingPage = () => {
     return (
@@ -12,6 +13,7 @@ const LandingPage = () => {
             <Experience />
             <Skill />
             <About />
+            <Education />
         </>
     );
 };
