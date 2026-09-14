@@ -2,6 +2,7 @@ import "./ProjectDetail.css";
 import { useParams } from "react-router-dom";
 import projectDetails from "../../data/projectDetails";
 import Header from "../../sections/ProjectDetail/Header/Header";
+import Brief from "../../sections/ProjectDetail/Brief/Brief";
 
 const ProjectDetail = () => {
     const { id } = useParams<{ id: string }>();
@@ -22,6 +23,13 @@ const ProjectDetail = () => {
                 year={project.year}
                 image={project.image}
             />
+            <main className="case-main">
+                <Brief
+                    title={project.briefHeading}
+                    description={project.brief}
+                    url={project.live}
+                />
+            </main>
         </>
     );
 };
