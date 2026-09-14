@@ -1,11 +1,16 @@
 import "./Project.css";
+import { forwardRef } from "react";
 import projectItems from "../../../data/projects";
 import ProjectCard from "../../../components/ProjectCard/ProjectCard";
 
-const Project = () => {
+interface ProjectProps {
+    ref?: React.RefObject<HTMLDivElement | null>;
+}
+
+const Project = forwardRef<HTMLElement, ProjectProps>((props, ref) => {
     return (
         <>
-            <section className="portfolio-content" id="projects">
+            <section className="portfolio-content" ref={ref}>
                 <div className="container">
                     <div className="row">
                         <div className="col-12 col-lg-10 mx-auto text-center">
@@ -27,6 +32,6 @@ const Project = () => {
             </section>
         </>
     );
-};
+});
 
 export default Project;

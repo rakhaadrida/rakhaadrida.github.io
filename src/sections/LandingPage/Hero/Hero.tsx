@@ -5,7 +5,20 @@ import GithubIcon from "../../../assets/icons/github.png";
 import LinkedInIcon from "../../../assets/icons/linkedin.png";
 import WordpressIcon from "../../../assets/icons/wordpress.png";
 
-const Hero = () => {
+interface HeroProps {
+    refProjects: React.RefObject<HTMLDivElement | null>;
+}
+
+const Hero = (props: HeroProps) => {
+    function showProjects() {
+        window.scrollTo({
+            top: props.refProjects.current
+                ? props.refProjects.current?.offsetTop - 30
+                : 0,
+            behavior: "smooth",
+        });
+    }
+
     return (
         <>
             <header>
@@ -51,8 +64,9 @@ const Hero = () => {
                                     Download CV
                                 </Button>
                                 <Button
-                                    type="link"
-                                    href="#projects"
+                                    type="button"
+                                    onClick={showProjects}
+                                    href=""
                                     className="btn btn-secondary text-white"
                                     aria-label="View my work"
                                 >

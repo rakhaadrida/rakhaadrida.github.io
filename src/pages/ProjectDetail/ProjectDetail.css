@@ -1,0 +1,26 @@
+:root {
+    --navy: #071a33;
+    --navy-soft: #102b4d;
+    --blue: #0693e3;
+    --ink: #10243d;
+    --muted: #64748b;
+    --line: #dbe5ef;
+    --paper: #f7fafc;
+    --white: #ffffff;
+}
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Muli", sans-serif;
+    line-height: 1.6;
+}
+a {
+    color: inherit;
+}
