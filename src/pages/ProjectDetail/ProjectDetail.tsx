@@ -4,6 +4,7 @@ import projectDetails from "../../data/projectDetails";
 import Header from "../../sections/ProjectDetail/Header/Header";
 import Brief from "../../sections/ProjectDetail/Brief/Brief";
 import Focus from "../../sections/ProjectDetail/Focus/Focus";
+import Build from "../../sections/ProjectDetail/Build/Build";
 
 const ProjectDetail = () => {
     const { id } = useParams<{ id: string }>();
@@ -31,6 +32,7 @@ const ProjectDetail = () => {
                     url={project.live}
                 />
                 <Focus features={project.features} />
+                <Build technologies={project.technologies} />
             </main>
         </>
     );
