@@ -15,11 +15,8 @@
     font-weight: 800;
     letter-spacing: 0.18em;
     text-transform: uppercase;
-}
-
-.section-kicker p {
-    margin-top: inherit;
-    margin-bottom: inherit;
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
 }
 
 .lead-copy {

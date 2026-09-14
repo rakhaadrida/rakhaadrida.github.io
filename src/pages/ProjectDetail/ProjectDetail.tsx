@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import projectDetails from "../../data/projectDetails";
 import Header from "../../sections/ProjectDetail/Header/Header";
 import Brief from "../../sections/ProjectDetail/Brief/Brief";
+import Focus from "../../sections/ProjectDetail/Focus/Focus";
 
 const ProjectDetail = () => {
     const { id } = useParams<{ id: string }>();
@@ -29,6 +30,7 @@ const ProjectDetail = () => {
                     description={project.brief}
                     url={project.live}
                 />
+                <Focus features={project.features} />
             </main>
         </>
     );

@@ -8,12 +8,15 @@
     --paper: #f7fafc;
     --white: #ffffff;
 }
+
 * {
     box-sizing: border-box;
 }
+
 html {
     scroll-behavior: smooth;
 }
+
 body {
     margin: 0;
     background: var(--paper);
@@ -21,6 +24,7 @@ body {
     font-family: "Muli", sans-serif;
     line-height: 1.6;
 }
+
 a {
     color: inherit;
 }
