@@ -8,6 +8,7 @@ import Build from "../../sections/ProjectDetail/Build/Build";
 import Gallery from "../../sections/ProjectDetail/Gallery/Gallery";
 import Challenge from "../../sections/ProjectDetail/Challenge/Challenge";
 import Outcome from "../../sections/ProjectDetail/Outcome/Outcome";
+import Footer from "../../sections/ProjectDetail/Footer/Footer";
 
 const ProjectDetail = () => {
     const { id } = useParams<{ id: string }>();
@@ -17,6 +18,24 @@ const ProjectDetail = () => {
     if (!project) {
         return <div>Project not found.</div>;
     }
+
+    const currentIndex = projectDetails.findIndex(
+        (project) => project.id === id,
+    );
+
+    const previousProject =
+        projectDetails[
+            (currentIndex - 1 + projectDetails.length) % projectDetails.length
+        ];
+
+    const nextProject =
+        projectDetails[(currentIndex + 1) % projectDetails.length];
+
+    const previousId = previousProject.id;
+    const previousTitle = previousProject.title;
+
+    const nextId = nextProject.id;
+    const nextTitle = nextProject.title;
 
     return (
         <>
@@ -43,6 +62,13 @@ const ProjectDetail = () => {
                 />
                 <Outcome description={project.outcome} />
             </main>
+
+            <Footer
+                previousId={previousId}
+                previousTitle={previousTitle}
+                nextId={nextId}
+                nextTitle={nextTitle}
+            />
         </>
     );
 };
