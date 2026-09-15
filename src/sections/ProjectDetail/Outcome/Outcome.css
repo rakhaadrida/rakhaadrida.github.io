@@ -1,0 +1,9 @@
+.outcome-section {
+    padding: 80px 0 0;
+}
+
+.outcome-section h2 {
+    max-width: 950px;
+    font-size: clamp(24px, 1vw, 40px);
+    white-space: pre-line;
+}

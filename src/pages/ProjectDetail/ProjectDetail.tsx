@@ -7,6 +7,7 @@ import Focus from "../../sections/ProjectDetail/Focus/Focus";
 import Build from "../../sections/ProjectDetail/Build/Build";
 import Gallery from "../../sections/ProjectDetail/Gallery/Gallery";
 import Challenge from "../../sections/ProjectDetail/Challenge/Challenge";
+import Outcome from "../../sections/ProjectDetail/Outcome/Outcome";
 
 const ProjectDetail = () => {
     const { id } = useParams<{ id: string }>();
@@ -40,6 +41,7 @@ const ProjectDetail = () => {
                     title={project.challengeHeading}
                     description={project.solution}
                 />
+                <Outcome description={project.outcome} />
             </main>
         </>
     );
