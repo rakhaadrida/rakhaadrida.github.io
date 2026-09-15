@@ -3,11 +3,6 @@
     border-bottom: 1px solid var(--line);
 }
 
-.content-section-focus {
-    padding: 80px 0 60px;
-    border-bottom: 1px solid var(--line);
-}
-
 .feature-list {
     display: grid;
     gap: 0;
