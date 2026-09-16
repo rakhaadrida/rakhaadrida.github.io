@@ -20,9 +20,7 @@ const Footer = ({
                 ← {previousTitle}
             </a>
             <Button type="link" href="/#projects" className="footer-home">
-                {/* <a className="footer-home" href="index.html#projects"> */}
                 All projects
-                {/* </a> */}
             </Button>
             <a id="next-project" href={`/project/${nextId}`}>
                 {nextTitle} →

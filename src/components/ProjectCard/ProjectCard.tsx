@@ -2,6 +2,7 @@ import "./ProjectCard.css";
 import Button from "../Button/Button";
 
 interface ProjectCardProps {
+    id: string;
     image: string;
     imageAlt: string;
     category: string;
@@ -14,6 +15,7 @@ interface ProjectCardProps {
 }
 
 const ProjectCard = ({
+    id,
     image,
     imageAlt,
     category,
@@ -54,7 +56,11 @@ const ProjectCard = ({
                 </div>
 
                 <div className="project-actions">
-                    <Button type="link" href="" className="action-primary">
+                    <Button
+                        type="link"
+                        href={`/project/${id}`}
+                        className="action-primary"
+                    >
                         <i className="fa fa-arrow-right" />
                         View Project
                     </Button>
