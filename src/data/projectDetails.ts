@@ -49,7 +49,7 @@ interface Project {
     summary: string;
     briefHeading: string;
     brief: string;
-    live?: string | null;
+    live?: string;
     features: Feature[];
     technologies: Tech[];
     galleries: Gallery[];

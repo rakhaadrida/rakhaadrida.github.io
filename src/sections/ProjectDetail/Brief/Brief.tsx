@@ -4,7 +4,7 @@ import Button from "../../../components/Button/Button";
 interface BriefProps {
     title: string;
     description: string;
-    url: string;
+    url?: string;
 }
 
 const Brief = ({ title, description, url }: BriefProps) => {
