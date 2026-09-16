@@ -7,7 +7,7 @@ interface ProjectProps {
     ref?: React.RefObject<HTMLDivElement | null>;
 }
 
-const Project = forwardRef<HTMLElement, ProjectProps>((props, ref) => {
+const Project = forwardRef<HTMLElement, ProjectProps>((_props, ref) => {
     return (
         <>
             <section className="portfolio-content" ref={ref}>
