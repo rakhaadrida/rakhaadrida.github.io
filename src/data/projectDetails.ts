@@ -2,6 +2,26 @@ import PersonalGrowthThumbnail from "../assets/images/project/personalgrowth/thu
 import PersonalGrowthOne from "../assets/images/project/personalgrowth/1.png";
 import PersonalGrowthTwo from "../assets/images/project/personalgrowth/2.png";
 import PersonalGrowthThree from "../assets/images/project/personalgrowth/3.png";
+import JakartaVetThumbnail from "../assets/images/project/jakartavet/thumbnail.png";
+import JakartaVetOne from "../assets/images/project/jakartavet/1.png";
+import JakartaVetTwo from "../assets/images/project/jakartavet/2.png";
+import JakartaVetThree from "../assets/images/project/jakartavet/3.png";
+import InfopondThumbnail from "../assets/images/project/infopond/thumbnail.png";
+import InfopondOne from "../assets/images/project/infopond/1.png";
+import InfopondTwo from "../assets/images/project/infopond/2.png";
+import InfopondThree from "../assets/images/project/infopond/3.png";
+import LaravelPosThumbnail from "../assets/images/project/laravelpos/thumbnail.png";
+import LaravelPosOne from "../assets/images/project/laravelpos/1.png";
+import LaravelPosTwo from "../assets/images/project/laravelpos/2.png";
+import LaravelPosThree from "../assets/images/project/laravelpos/3.png";
+import NutrilabThumbnail from "../assets/images/project/nutrilab/thumbnail.png";
+import NutrilabOne from "../assets/images/project/nutrilab/1.png";
+import NutrilabTwo from "../assets/images/project/nutrilab/2.png";
+import NutrilabThree from "../assets/images/project/nutrilab/3.png";
+import AnkaStoryThumbnail from "../assets/images/project/ankastory/thumbnail.jpg";
+import AnkaStoryOne from "../assets/images/project/ankastory/1.jpg";
+import AnkaStoryTwo from "../assets/images/project/ankastory/2.jpg";
+import AnkaStoryThree from "../assets/images/project/ankastory/3.jpg";
 
 interface Feature {
     title: string;
@@ -29,7 +49,7 @@ interface Project {
     summary: string;
     briefHeading: string;
     brief: string;
-    live: string;
+    live?: string | null;
     features: Feature[];
     technologies: Tech[];
     galleries: Gallery[];
@@ -123,8 +143,8 @@ const projects: Project[] = [
         category: "Full-Stack Engineering / Full-Time",
         type: "Vodea",
         year: "2021",
-        image: "images/porto/jvet-thumbnail.png",
-        thumbnail: "images/porto/jvet-thumbnail.png",
+        image: JakartaVetThumbnail,
+        thumbnail: JakartaVetThumbnail,
         summary:
             "A veterinary care platform built to connect pet owners with JakartaVet's clinics, services, and real-time queueing experience.",
         briefHeading: "A better way to care",
@@ -182,19 +202,19 @@ const projects: Project[] = [
         ],
         galleries: [
             {
-                url: "images/porto/jvet-thumbnail.png",
+                url: JakartaVetThumbnail,
                 caption: "Service overview",
             },
             {
-                url: "images/jve/jve1.png",
+                url: JakartaVetOne,
                 caption: "Clinic experience",
             },
             {
-                url: "images/jve/jve3.png",
+                url: JakartaVetTwo,
                 caption: "Real Time Queue",
             },
             {
-                url: "images/jve/jve5.png",
+                url: JakartaVetThree,
                 caption: "Email Notification",
             },
         ],
@@ -206,6 +226,349 @@ const projects: Project[] = [
             "The main challenge was connecting a customer-facing veterinary website with the clinic's day-to-day queue operations. The platform needed to serve two very different users: pet owners looking for a simple way to access veterinary services, and clinic staff who needed a practical interface to manage content and operate the queue.\n\n The queueing workflow added another layer of complexity. Queue numbers had to be managed from the backoffice while keeping the customer-facing experience synchronized with the clinic's current queue status. This required the website, backoffice, and real-time communication layer to work together as one system.",
         outcome:
             "The result was a complete digital platform that brought JakartaVet's customer experience and clinic operations into a single system. Pet owners could discover services, access clinic information, and interact with the online queueing system, while clinic staff could manage website content and operate daily queues through the backoffice.\n\n The platform has continued to support JakartaVet's operations across its three clinic locations since its initial development in 2021, making it more than a marketing website—it became part of the clinic's day-to-day digital workflow.",
+    },
+    {
+        id: "infopond",
+        title: "Infopond",
+        category: "Full-Stack Engineering / Full-Time",
+        type: "Vodea",
+        year: "2023",
+        image: InfopondThumbnail,
+        thumbnail: InfopondThumbnail,
+        summary:
+            "A full-stack tourism platform combining location discovery, interactive maps, and content management into a single experience.",
+        briefHeading: "Discover more, right where you are.",
+        brief: "Infopond was built as a location discovery platform for exploring tourism destinations and location-based information. The platform combines interactive maps, nearby destination discovery, multilingual content, and a content management system to make location-based information easier to discover and manage.",
+        live: "https://infoma.au/",
+        features: [
+            {
+                title: "Location Discovery",
+                description:
+                    "Users needed an intuitive way to search, discover, and navigate nearby tourism destinations through an interactive map with accurate distance information.",
+            },
+            {
+                title: "Content & Multilingual Experience",
+                description:
+                    "Tourism information needed to be structured, searchable, and available across multiple languages without compromising the user experience.",
+            },
+            {
+                title: "Content Management",
+                description:
+                    "Administrators needed a backoffice to manage destinations, categories, media, and other platform content efficiently.",
+            },
+            {
+                title: "Partner & Redemption Flows",
+                description:
+                    "The platform needed to support partner-related codes and redemption flows as part of the overall location-based experience.",
+            },
+        ],
+        technologies: [
+            {
+                title: "Backend",
+                description: "Laravel + Google Maps API",
+            },
+            {
+                title: "Database",
+                description: "MySQL",
+            },
+            {
+                title: "Frontend",
+                description: "HTML + CSS + JavaScript + jQuery",
+            },
+            {
+                title: "Location & Discovery",
+                description:
+                    "Location Search + Distance Calculation + Interactive Maps",
+            },
+            {
+                title: "Content & Localization",
+                description:
+                    "Multilingual Content | Search | Media | Dynamic Content",
+            },
+            {
+                title: "Backoffice & CMS",
+                description:
+                    "Destination Management + Content Management | Partner Management | Redeem Codes",
+            },
+        ],
+        galleries: [
+            {
+                url: InfopondThumbnail,
+                caption: "Platform overview",
+            },
+            {
+                url: InfopondOne,
+                caption: "Discovery interface",
+            },
+            {
+                url: InfopondTwo,
+                caption: "Multilingual Feature",
+            },
+            {
+                url: InfopondThree,
+                caption: "Location Search & Distance Calculation",
+            },
+        ],
+        challengeHeading: "Information is only useful when it is findable",
+        challenge:
+            "Local information can be dense and inconsistent. The experience needed to turn that raw material into fast, relevant answers.",
+        solutionHeading: "A sharper signal",
+        solution:
+            "The challenge was to bring together geographic data, tourism content, multilingual information, and user interactions into a single location-driven experience. Users needed to quickly discover relevant destinations based on location, while administrators needed a flexible way to manage the underlying content through the backoffice.\n\n This required keeping the location services, backend data, frontend experience, and CMS closely connected while supporting additional flows such as partner codes and redemption functionality.",
+        outcome:
+            "Delivered a scalable full-stack platform covering the backend, frontend, and backoffice, with location discovery powered by Google Maps and distance calculation. The resulting system provided a unified experience for discovering tourism destinations while giving administrators the tools to manage multilingual content and platform operations efficiently.",
+    },
+    {
+        id: "laravelpos",
+        title: "Laravel POS System",
+        category: "Full Stack Development / Freelance",
+        type: "Cahaya Prima Lestari",
+        year: "2021",
+        image: LaravelPosThumbnail,
+        thumbnail: LaravelPosThumbnail,
+        summary:
+            "A custom Laravel-based POS and business management system rebuilt to improve operational control, inventory accuracy, and financial reporting.",
+        briefHeading: "Replacing the fragile parts",
+        brief: "A complete POS and business management system rebuilt from an existing platform using Laravel and MySQL. I was responsible for developing the full system, from backend architecture and business logic to the admin dashboard, while also migrating existing data into the new platform. The system was designed to address operational issues across inventory, transactions, approvals, and financial reporting, and was successfully implemented for two different clients across different years.",
+        features: [
+            {
+                title: "System Modernization",
+                description:
+                    "Rebuild the existing platform and migrate historical data into a more structured Laravel application.",
+            },
+            {
+                title: "Inventory Accuracy",
+                description:
+                    "Replace unreliable monthly stock tracking with real-time stock card functionality for clearer inventory movement.",
+            },
+            {
+                title: "Controlled Transactions",
+                description:
+                    "Introduce role-based access and approval workflows to prevent unauthorized or unexplained transaction changes.",
+            },
+            {
+                title: "Financial Accuracy",
+                description:
+                    "Connect operational data with AR/AP and FIFO-based financial reporting to calculate COGS and support more accurate pricing decisions.",
+            },
+        ],
+        technologies: [
+            {
+                title: "Backend & Database",
+                description: "Laravel + MySQL",
+            },
+            {
+                title: "Admin Dashboard",
+                description: "HTML + CSS + Bootstrap + JavaScript + jQuery",
+            },
+            {
+                title: "System Migration",
+                description: "Existing Data Migration + Database Restructuring",
+            },
+            {
+                title: "Access & Workflow",
+                description:
+                    "7 User Roles + Role-Based Access + Approval Workflow",
+            },
+            {
+                title: "Inventory Management",
+                description: "Real-Time Stock Card + Stock Movement Tracking",
+            },
+            {
+                title: "Reporting & Finance",
+                description:
+                    "AR/AP Integration + FIFO Financial Reporting + Excel/PDF Export",
+            },
+        ],
+        galleries: [
+            {
+                url: LaravelPosThumbnail,
+                caption: "System Overview",
+            },
+            {
+                url: LaravelPosOne,
+                caption: "Dashboard",
+            },
+            {
+                url: LaravelPosTwo,
+                caption: "Account Receivable Page",
+            },
+            {
+                url: LaravelPosThree,
+                caption: "FIFO Financial Reporting",
+            },
+        ],
+        challengeHeading: "The limits of legacy",
+        challenge:
+            "The old system made routine work fragile: data drifted, reports took too long, and critical knowledge was trapped in manual steps.",
+        solutionHeading: "A system built around reality",
+        solution:
+            "The main challenge was rebuilding an existing system while preserving its historical data and addressing the operational problems that had accumulated over time. Inventory discrepancies made monthly stock tracking difficult, while transaction changes without sufficient control created uncertainty around financial records.\n\n The new system needed to establish clearer workflows, real-time stock visibility, and more reliable financial calculations without disrupting the underlying business operations.",
+        outcome:
+            "A complete Laravel-based POS and business management system was delivered, covering the backend, database, and admin dashboard. Existing business data was migrated into the new platform, while real-time stock cards, approval workflows, and FIFO-based financial reporting addressed key operational and financial issues.\n\n The system was successfully implemented and used by two different clients across different years, providing more reliable transaction control, clearer inventory visibility, and more accurate financial data for COGS calculation and pricing decisions.",
+    },
+    {
+        id: "nutrilab",
+        title: "Nutrilab Pratama",
+        category: "Backend Engineering / Full-Time",
+        type: "Vodea",
+        year: "2023",
+        image: NutrilabThumbnail,
+        thumbnail: NutrilabThumbnail,
+        summary:
+            "A centralized backend powering Nutrilab’s website and backoffice, designed to connect product, content, and business data through a reliable REST API.",
+        briefHeading: "Powering a complex product ecosystem",
+        brief: "Nutrilab Pratama needed a reliable backend to support both its customer-facing website and internal backoffice. I developed the RESTful APIs that connected the two platforms, handling product data, content management, and core business operations through a centralized Laravel backend.",
+        live: "https://nutrilab.co.id/",
+        features: [
+            {
+                title: "Unified Data Layer",
+                description:
+                    "Centralize product, catalog, and website content through a single backend.",
+            },
+            {
+                title: "Website API",
+                description:
+                    "Deliver structured APIs for the customer-facing platform and its dynamic content.",
+            },
+            {
+                title: "Backoffice API",
+                description:
+                    "Support internal teams with APIs for managing products, categories, content, and business data.",
+            },
+            {
+                title: "Reliable Architecture",
+                description:
+                    "Maintain a consistent REST API architecture that could support both platforms without duplicating business logic.",
+            },
+        ],
+        technologies: [
+            {
+                title: "Backend",
+                description: "Laravel + RESTful API",
+            },
+            {
+                title: "Database",
+                description: "MySQL",
+            },
+            {
+                title: "Business Logic",
+                description:
+                    "Product Management + Category Management + Content Management",
+            },
+            {
+                title: "API Layer",
+                description:
+                    "Authentication + Authorization | Request Validation | Resource Transformation",
+            },
+        ],
+        galleries: [
+            {
+                url: NutrilabThumbnail,
+                caption: "Project Overview",
+            },
+            {
+                url: NutrilabOne,
+                caption: "Landing Page",
+            },
+            {
+                url: NutrilabTwo,
+                caption: "Promotion Catalog",
+            },
+            {
+                url: NutrilabThree,
+                caption: "Search & Filter Products",
+            },
+        ],
+        challengeHeading: "One backend, two platforms",
+        challenge:
+            "The visible interface needed a stable layer underneath it, with clear contracts for products, users, and transaction flows.",
+        solutionHeading: "Structure before complexity",
+        solution:
+            "The main challenge was building a single backend that could serve two different platforms with different needs. The API had to expose the right data for the public website while also supporting the backoffice workflows used to manage that data. This required keeping the API structure consistent, business logic centralized, and responses predictable across both applications.",
+        outcome:
+            "Delivered a centralized Laravel REST API that became the backend foundation for Nutrilab’s website and backoffice platforms. The system provided a consistent way to manage and consume product and content data, reducing duplication between platforms and creating a more maintainable foundation for the company’s digital ecosystem.",
+    },
+    {
+        id: "ankastory",
+        title: "Anka Story",
+        category: "Frontend Development / Personal",
+        type: "Anka Story",
+        year: "2020",
+        image: AnkaStoryThumbnail,
+        thumbnail: AnkaStoryThumbnail,
+        summary:
+            "A personal interactive story built to turn a relationship into a digital anniversary experience filled with memories, milestones, and moments.",
+        briefHeading: "A story worth experiencing",
+        brief: "An interactive anniversary website created as a personal project to celebrate a relationship through stories, milestones, trivia, photos, and videos. I designed and developed the entire experience from the ground up, turning personal memories into a visual journey that could be explored together.",
+        live: "https://ankastory.github.io/",
+        features: [
+            {
+                title: "A story, not a scroll",
+                description:
+                    "Present personal stories and memories as an engaging digital journey",
+            },
+            {
+                title: "Timeline of memories",
+                description:
+                    "Visualize the relationship's milestones through an interactive love line",
+            },
+            {
+                title: "Interactions that matter",
+                description:
+                    "Make trivia and other sections feel playful rather than static.",
+            },
+            {
+                title: "Personal by design",
+                description:
+                    "Used custom copy, images, and videos to make the experience feel singular.",
+            },
+        ],
+        technologies: [
+            {
+                title: "Frontend",
+                description: "HTML + CSS + Bootstrap + JavaScript",
+            },
+            {
+                title: "Experience",
+                description:
+                    "Interactive Storytelling + Love Line Timeline + Trivia",
+            },
+            {
+                title: "Design",
+                description: "Responsive Layout | Animations | Interactive UI",
+            },
+            {
+                title: "Media",
+                description: "Photo Gallery + Video",
+            },
+        ],
+        galleries: [
+            {
+                url: AnkaStoryThumbnail,
+                caption: "The story experience",
+            },
+            {
+                url: AnkaStoryOne,
+                caption: "Remembering milestones",
+            },
+            {
+                url: AnkaStoryTwo,
+                caption: "Loveline timeline",
+            },
+            {
+                url: AnkaStoryThree,
+                caption: "Trivia and interactions",
+            },
+        ],
+        challengeHeading: "More than just a website",
+        challenge:
+            "A personal story cannot be reduced to a list of features. It needed pacing, moments of discovery, and enough room for the material to breathe.",
+        solutionHeading: "A quiet interactive archive",
+        solution:
+            "The challenge was to turn something deeply personal into an experience that felt engaging, emotional, and visually cohesive. Instead of presenting memories as a collection of static content, I had to structure stories, milestones, interactive elements, and media into a journey that felt natural to explore.",
+        outcome:
+            "Anka Story became a personalized digital anniversary experience that brought our story, memories, and milestones together in one interactive space. Beyond being a website, it became a digital keepsake that captured the journey of our relationship in a way that could be revisited and shared.",
     },
 ];
 

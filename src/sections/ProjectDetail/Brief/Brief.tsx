@@ -1,4 +1,5 @@
 import "./Brief.css";
+import Button from "../../../components/Button/Button";
 
 interface BriefProps {
     title: string;
@@ -18,15 +19,19 @@ const Brief = ({ title, description, url }: BriefProps) => {
                     {description}
                 </p>
                 <div className="action-row" id="project-actions">
-                    <a
-                        href={url}
-                        className="action-link"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        Live preview
-                        <span aria-hidden="true"> ↗</span>
-                    </a>
+                    {url && (
+                        <Button
+                            type="link"
+                            href={url}
+                            className="action-link"
+                            target="_blank"
+                            rel="noreferrer"
+                            isExternal
+                        >
+                            Live preview
+                            <span aria-hidden="true"> ↗</span>
+                        </Button>
+                    )}
                 </div>
             </div>
         </section>
